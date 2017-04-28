@@ -1,3 +1,4 @@
+
 html {
   margin: 0;
   height: 100%;
@@ -32,13 +33,9 @@ img {
 
 /* --- */
 
-.back {
-  position: absolute;
-  top: 40px;
-  left: 80px;
+.back, .btn {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, .25);
-  background-image: url(/assets/left-arrow.svg);
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: left 6px center;
@@ -52,6 +49,17 @@ img {
   text-align: center;
   border-radius: 100px;
   padding: 4px 20px 4px 40px;
+
+  &.back {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    background-image: url(/assets/icons/left-arrow.svg);
+  }
+}
+
+.header {
+  position: relative;
 }
 
 .title {
@@ -62,6 +70,26 @@ img {
   margin: 0 0 0 200px;
   display: block;
   text-align: left;
+}
+
+.about {
+  background-image: url(/assets/icons/marker.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left 2px;
+  padding-left: 32px;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 26px;
+  color: #000;
+  opacity: .6;
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 /* --- */
@@ -97,6 +125,9 @@ img {
 }
 .red {
   background: #EE6A65;
+}
+.grey {
+  background: #C6CED1;
 }
 
 .section-title {
@@ -163,6 +194,7 @@ img {
 
 
 .rooms {
+  display: none;
   flex-grow: 1;
 }
 
@@ -282,6 +314,35 @@ img {
 
 /* --- */
 
+.section-about {
+  padding: 40px;
+
+  .print {
+    cursor: pointer;
+    background-image: url(/assets/icons/print.svg);
+    background-position: 12px 8px;
+    padding-left: 46px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+  }
+}
+
+.section-address {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+
+  address {
+    flex: 0 0 300px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+/* --- */
+
 .row {
   display: flex;
   flex-direction: row;
@@ -373,7 +434,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .4);
-    background-image: url(/assets/zoom.svg);
+    background-image: url(/assets/icons/zoom.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px;
@@ -413,7 +474,7 @@ img {
     width: 40px;
     height: 40px;
     background-color: #000;
-    background-image: url(/assets/cross.svg);
+    background-image: url(/assets/icons/cross.svg);
     background-position: center;
     background-size: 10px;
     background-repeat: no-repeat;
@@ -436,12 +497,12 @@ img {
     cursor: pointer;
 
     &.left {
-      background-image: url(/assets/left-arrow-white.svg);
+      background-image: url(/assets/icons/left-arrow-white.svg);
       left: 40px;
     }
 
     &.right {
-      background-image: url(/assets/left-arrow-white.svg);
+      background-image: url(/assets/icons/left-arrow-white.svg);
       right: 40px;
       transform: rotate(180deg);
     }
@@ -486,3 +547,4 @@ button:focus {
   background: #222;
 }
 
+@import 'print.scss';
