@@ -1,6 +1,11 @@
 .PHONY: js css build assets
 
-all: js css assets build
+all: init js css assets thumbnails build
+
+init:
+	-rm -r build
+	mkdir build
+	cp node_modules/jquery/dist/jquery.slim.min.js ./build
 
 serve:
 	http-server ./build
@@ -24,6 +29,11 @@ css:
 
 build:
 	./build.sh
+
+thumbnails:
+	-rm -r assets/rooms-thumbnails
+	cp -r assets/rooms assets/rooms-thumbnails
+	cd assets/rooms-thumbnails && mogrify -quality 20 **/*.jpg
 
 assets:
 	cp -r assets build/

@@ -194,14 +194,15 @@ img {
 
 
 .rooms {
-  display: none;
   flex-grow: 1;
+  justify-content: center;
 }
 
 .room {
   position: relative;
   margin: 0 40px;
-  display: flex;
+  max-width: 400px;
+  display: none;
   flex: 1;
   flex-direction: column;
   align-self: center;

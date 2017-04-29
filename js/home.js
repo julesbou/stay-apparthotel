@@ -1,21 +1,21 @@
 $(function() {
 
-  if ($('.rooms').length) {
-    const $imgs = $('.rooms .room img')
+  if (!$('.rooms').length) return
 
-    // for locale development
-    if ($imgs.toArray().every($img => $img.complete)) loaded()
+  const $imgs = $('.rooms .room img')
 
-    // for remote
-    let cbCount = $imgs.length
-    $imgs.on('load', function() {
-      cbCount--
-      if (cbCount === 0) loaded()
-    })
+  // for locale development
+  if ($imgs.toArray().every($img => $img.complete)) loaded()
 
-    function loaded() {
-      $('.rooms').show()
-    }
+  // for remote
+  let cbCount = $imgs.length
+  $imgs.on('load', function() {
+    cbCount--
+    if (cbCount === 0) loaded()
+  })
+
+  function loaded() {
+    $('.rooms .room').css('display', 'flex')
+    $('img').unveil()
   }
-
 })

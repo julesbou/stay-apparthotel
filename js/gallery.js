@@ -1,8 +1,12 @@
 $(function() {
 
+  if (!$('.gallery').length) return
+
   const $gallery = $('.gallery')
   const $galleryFullpage = $('.gallery-fullpage')
   const $imgs = $('.gallery .img')
+
+  $gallery.find('img').unveil()
 
   let currImg
   let imgs = [...$imgs].map(img => $(img).find('img').attr('src'))
