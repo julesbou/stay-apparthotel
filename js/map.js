@@ -4,6 +4,7 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: window.innerWidth < 1000 ? 14 : 16,
     scaleControl: true,
+    scrollwheel: false,
     center: coords,
   })
 

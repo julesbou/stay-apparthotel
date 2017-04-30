@@ -33,6 +33,10 @@ main {
   font-family: 'Playfair Display', serif;
 }
 
+a {
+  color: #000;
+}
+
 p {
   line-height: 1.5;
 }
@@ -59,6 +63,7 @@ img {
   text-align: center;
   border-radius: 100px;
   padding: 4px 20px 4px 40px;
+  cursor: pointer;
 
   &.back {
     position: absolute;
@@ -149,6 +154,9 @@ img {
 .grey {
   background: #C6CED1;
 }
+.transparent {
+  background: none;
+}
 
 .section-title {
   font-family: 'Dosis', sans-serif;
@@ -201,7 +209,7 @@ img {
   margin-top: 40px;
 }
 
-.section-home .subtitle {
+.subtitle {
   color: #000;
   opacity: .6;
   font-size: 36px;
@@ -290,6 +298,7 @@ img {
   transition: all 200ms ease-out;
   /*clip-path: url(#svgPath1);*/
   clip-path: polygon( 0 30%, 30% 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+  clip-path: url('#roomClipPath');
 }
 
 .room .room-desc {
@@ -639,12 +648,37 @@ button:focus {
   background: #222;
 }
 
+/* --- */
+
 #map {
   width: 100%;
-  height: 400px;
+  height: 600px;
 
   @include mobile {
     height: 800px;
+  }
+}
+
+
+/* --- */
+
+.reglement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+
+  .subtitle {
+    margin-top: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  p {
+    max-width: 750px;
   }
 }
 
