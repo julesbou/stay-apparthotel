@@ -9,7 +9,7 @@ $(function() {
   $gallery.find('img').unveil()
 
   let currImg
-  let imgs = [...$imgs].map(img => $(img).find('img').attr('src'))
+  let imgs = [...$imgs].map(img => $(img).find('img').data('src'))
 
   $imgs.on('click', function(event) {
     $('body').addClass('has-overlay')

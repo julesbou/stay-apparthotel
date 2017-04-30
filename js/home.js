@@ -4,14 +4,15 @@ $(function() {
 
   const $imgs = $('.rooms .room img')
 
-  // for locale development
-  if ($imgs.toArray().every($img => $img.complete)) loaded()
+  let nbImgDone = 0
+  $imgs.each((i, $img) => $img.complete && nbImgDone++)
 
-  // for remote
-  let cbCount = $imgs.length
+  let nbImgRemaining = $imgs.length - nbImgDone
+  if (nbImgRemaining === 0) loaded()
+
   $imgs.on('load', function() {
-    cbCount--
-    if (cbCount === 0) loaded()
+    nbImgRemaining--
+    if (nbImgRemaining === 0) loaded()
   })
 
   function loaded() {
