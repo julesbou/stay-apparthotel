@@ -1,3 +1,4 @@
+<?php echo $view->extend('layout.php') ?>
 
 <section class="section section-about red">
   <a onclick="goBack()" class="back">Retour</a>

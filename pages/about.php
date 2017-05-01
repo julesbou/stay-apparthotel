@@ -1,3 +1,4 @@
+<?php echo $view->extend('layout.php') ?>
 
 <section class="section section-about blue">
   <a href="/" class="back">Retour</a>

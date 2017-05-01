@@ -7,6 +7,6 @@
   <body>
     <script src="/jquery.slim.min.js"></script>
     <script src="/scripts.js"></script>
-    {{ CONTENT }}
+    <?php echo $content; ?>
   </body>
 </html>

@@ -1,3 +1,4 @@
+<?php echo $view->extend('layout.php') ?>
 
 <section class="section section-home">
   <div class="header">

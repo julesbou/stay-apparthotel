@@ -1,7 +1,8 @@
+<?php echo $view->extend('layout.php') ?>
 
-<section class="section section-desc orange">
+<section class="section section-desc <?php echo $color; ?>">
   <a href="/" class="back">Retour</a>
-  <h1 class="title">Chambre<br>Toussaint</h1>
+  <h1 class="title">Chambre<br><?php echo $name; ?></h1>
   <!-- Teodoro Jericho Takashi Manlio Arnaldo Toussaint Walker -->
   <div class="row mobile-col">
     <div class="row-col right-margin">
@@ -38,44 +39,52 @@
       </div>
     </div>
     <div class="row-col row-v-center">
-      <img src="/assets/rooms/2/cover.jpg">
+      <img src="/assets/rooms/<?php echo $assets; ?>/cover.jpg">
     </div>
   </div>
 </section>
 
-<section class="section section-gallery orange">
+<section class="section section-gallery yellow">
   <h2 class="section-title">02 - Gallerie</h2>
+
   <div class="gallery">
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/11.jpg" data-src="/assets/rooms/2/11.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/1.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/1.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/2.jpg" data-src="/assets/rooms/2/2.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/2.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/2.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/3.jpg" data-src="/assets/rooms/2/3.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/3.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/3.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/4.jpg" data-src="/assets/rooms/2/4.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/4.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/4.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/5.jpg" data-src="/assets/rooms/2/5.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/5.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/5.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/6.jpg" data-src="/assets/rooms/2/6.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/6.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/6.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/7.jpg" data-src="/assets/rooms/2/7.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/7.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/7.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/8.jpg" data-src="/assets/rooms/2/8.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/8.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/8.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/9.jpg" data-src="/assets/rooms/2/9.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/9.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/9.jpg">
     </div>
     <div class="img">
-      <img src="/assets/rooms-thumbnails/2/10.jpg" data-src="/assets/rooms/2/10.jpg">
+      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/10.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/10.jpg">
     </div>
+  </div>
+
+  <div class="gallery-fullpage">
+    <div class="img"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="close"></div>
   </div>
 </section>
 
@@ -91,6 +100,7 @@
         Nous vous ferons une joie de vous y répondre.
         <a href="/reglement.html">Lire le réglement intérieur.</a>
       </p>
+
     </div>
 
     <div class="row-col">
@@ -106,8 +116,10 @@
 
       <label class="field">
         Message
-        <textarea rows="8"></textarea>
+        <textarea rows="8" placeholder="Indiquer votre date d'arrivée et de départ"></textarea>
       </label>
+
+      <input type="hidden" name="name" value="<?php echo $name; ?>">
 
       <button>Envoyer votre demande</button>
     </div>

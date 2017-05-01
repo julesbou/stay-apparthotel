@@ -28,7 +28,7 @@ css:
 	autoprefixer-cli -o build/styles.css build/styles.css
 
 build:
-	./build.sh
+	php php/build.php
 
 thumbnails:
 	-rm -r assets/rooms-thumbnails
