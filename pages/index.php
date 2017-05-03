@@ -27,12 +27,3 @@
   </div>
 
 </section>
-
-<svg width="0" height="0">
-  <defs>
-    <clipPath id="roomClipPath" clipPathUnits="objectBoundingBox">
-      <polygon points="0 0.3, 0.3 0, 1 0, 1 1, 1 1, 0 1" />
-    </clipPath>
-  </defs>
-</svg>
-
