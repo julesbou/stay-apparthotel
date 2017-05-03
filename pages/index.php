@@ -8,22 +8,22 @@
 
   <div class="rooms row">
 
-    <a href="/room1.html" class="room">
-      <span class="room-price">à partir de<br>45€</span>
-      <img class="room-img" src="/assets/rooms-thumbnails/1/cover.jpg" data-src="/assets/rooms/1/cover.jpg">
-      <p class="room-desc">Chambre Erasmo</p>
+    <a href="/chambre.html" class="room">
+      <span class="room-price">à partir de<br>55€</span>
+      <img class="room-img" src="/assets/rooms-thumbnails/chambre/cover.jpg" data-src="/assets/rooms/chambre/cover.jpg">
+      <p class="room-desc">Chambre</p>
     </a>
 
-    <a href="/room2.html" class="room">
-      <span class="room-price">à partir de<br>55€</span>
-      <img class="room-img" src="/assets/rooms-thumbnails/2/cover.jpg" data-src="/assets/rooms/2/cover.jpg">
-      <p class="room-desc">Chambre Toussaint</p>
+    <a href="/appartement-1.html" class="room">
+      <span class="room-price">à partir de<br>45€</span>
+      <img class="room-img" src="/assets/rooms-thumbnails/appartement-1/cover.jpg" data-src="/assets/rooms/appartement-1/cover.jpg">
+      <p class="room-desc">Appartement - 1</p>
     </a>
 
   </div>
 
   <div class="footer">
-    <h2 class="subtitle">Location d'appartements à Lille</h2>
+    <h2 class="subtitle">Location d'appartements courte et longue durée à Lille</h2>
   </div>
 
 </section>

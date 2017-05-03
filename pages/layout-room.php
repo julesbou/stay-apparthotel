@@ -1,20 +1,23 @@
 <?php echo $view->extend('layout.php') ?>
 
-<section class="section section-desc <?php echo $color; ?>">
+<section class="section section-desc">
   <a href="/" class="back">Retour</a>
-  <h1 class="title">Chambre<br><?php echo $name; ?></h1>
-  <!-- Teodoro Jericho Takashi Manlio Arnaldo Toussaint Walker -->
+  <h1 class="title"><?php echo $name; ?></h1>
   <div class="row mobile-col">
     <div class="row-col right-margin">
-      <h2 class="section-title">01 - Présentation</h2>
-      <p class="section-p">
-        Un appartement simple et fonctionnel, une déco chaleureuse pour vous sentir comme chez vous.
-        Restez-y aussi longtemps que vous le souhaiter, il est fait pour vous.
-      </p>
+      <h2 class="section-title">Présentation</h2>
+      <p class="section-p"><?php echo $desc; ?></p>
       <div class="details">
         <div>
+          <div>Prix</div>
+          <div>
+            à partir de <?php echo $prix; ?> par nuit
+            <small class="break">(possibilité de prix à la semaine ou au mois)</small>
+          </div>
+        </div>
+        <div>
           <div>Superficie</div>
-          <div>45m²</div>
+          <div><?php echo $superficie; ?></div>
         </div>
         <div>
           <div>Nbr. Places</div>
@@ -23,61 +26,35 @@
         <div>
           <div>Equipements</div>
           <div>
-            <ul>
-              <li>Frigo</li>
-              <li>Wifi</li>
-              <li>Cuisine</li>
-              <li>Bureau</li>
-            </ul>
-            <ul>
-              <li>Micro-onde</li>
-              <li>Cafetière</li>
-              <li>Serviettes de toilette</li>
-            </ul>
+            <?php foreach(array_chunk($equipments, count($equipments) / 2 + 1) as $list) { ?>
+              <ul>
+                <?php foreach($list as $el) { ?>
+                  <li><?php echo $el; ?></li>
+                <?php } ?>
+              </ul>
+            <?php } ?>
           </div>
         </div>
       </div>
     </div>
-    <div class="row-col row-v-center">
-      <img src="/assets/rooms/<?php echo $assets; ?>/cover.jpg">
+    <div class="row-col row-v-start row-h-end">
+      <img src="/assets/rooms/<?php echo $assets; ?>/cover.jpg" class="cover">
     </div>
   </div>
 </section>
 
-<section class="section section-gallery yellow">
-  <h2 class="section-title">02 - Gallerie</h2>
+<section class="section section-gallery">
+  <h2 class="section-title">Gallerie photos</h2>
 
   <div class="gallery">
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/1.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/1.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/2.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/2.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/3.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/3.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/4.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/4.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/5.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/5.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/6.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/6.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/7.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/7.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/8.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/8.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/9.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/9.jpg">
-    </div>
-    <div class="img">
-      <img src="/assets/rooms-thumbnails/<?php echo $assets; ?>/10.jpg" data-src="/assets/rooms/<?php echo $assets; ?>/10.jpg">
-    </div>
+    <?php foreach($imgs as $img) { ?>
+      <div class="img">
+        <img
+          src="/assets/rooms-thumbnails/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
+          data-src="/assets/rooms/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
+        >
+      </div>
+    <?php } ?>
   </div>
 
   <div class="gallery-fullpage">
@@ -93,7 +70,7 @@
   <div class="row mobile-col">
 
     <div class="row-col">
-      <h2 class="section-title">03 - Réservation</h2>
+      <h2 class="section-title">Réservation</h2>
 
       <p class="section-p" style="margin-right: 160px; text-align: justify;">
         Vous pouvez nous joindre ici toute question ou demande de réservation.

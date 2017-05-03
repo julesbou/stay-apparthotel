@@ -24,6 +24,12 @@
   <p>
     Les vendredis et samedis la durée de séjour minimale est de 2 nuits.
   </p>
+
+  <h2 class="subtitle">Suppléments</h2>
+  <p>
+    Place de parking et ménage en supplément.
+  </p>
+
 </section>
 
 

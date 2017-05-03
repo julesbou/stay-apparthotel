@@ -19,11 +19,9 @@
 
   <div class="row-col">
     <p>
-      Idéalement placée à 50 m de la Grand Place de Lille et sur l arrière du bâtiment (calme assuré).
-      Vous allez adorer découvrir Lille a pieds pour vos déplacements professionnels ou privés.
-      Possibilité de place de parking à proximité (payant)
+      Situation exceptionnelle à 50 m de la Grand place de Lille , pied à terre idéal pour vos déplacements professionnels ou pour découvrir la région.
     </p>
   </div>
 </section>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqqAaaQR7yShwSBOu45lcuZRboBNZnKuA\&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqqAaaQR7yShwSBOu45lcuZRboBNZnKuA&callback=initMap"></script>

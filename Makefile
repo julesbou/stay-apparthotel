@@ -17,7 +17,7 @@ deploy:
 watch:
 	chokidar 'js/**/*.js' -c 'make js' &
 	chokidar 'scss/**.scss' -c 'make css' &
-	chokidar 'pages/*.html' 'layout.html' -c 'make build' &
+	chokidar 'pages/**/*.php' -c 'make build' &
 	chokidar 'assets/*' 'assets/**/*' -c 'make assets'
 
 js:

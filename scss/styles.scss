@@ -121,10 +121,13 @@ img {
 
 .section {
   display: flex;
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 40px 80px;
   flex-direction: column;
   background-color: #b5c6c2;
+  max-width: 1200px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .green {
@@ -177,7 +180,7 @@ img {
   background-image: radial-gradient(#E5EDF0, #C6CED1);
   display: flex;
   flex-direction: column;
-  min-height: 700px;
+  min-height: 750px;
   height: calc(100% - 40px);
   width: calc(100% - 40px);
   box-sizing: border-box;
@@ -187,6 +190,8 @@ img {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 20px;
+  transform: translateX(-50%);
+  left: 50%;
 
   @include mobile {
     height: auto;
@@ -227,6 +232,7 @@ img {
   border-top: 1px solid #000;
   top: 24px;
   width: calc(50vw - 300px);
+  max-width: 180px;
 }
 .subtitle:before {
   right: 100%;
@@ -337,10 +343,19 @@ img {
   @include mobile {
     font-size: 200%
   }
-}
 
-.section-desc .title {
-  text-align: right;
+  .title {
+    text-align: right;
+  }
+
+  .break {
+    display: block;
+  }
+
+  .cover {
+    margin-top: 80px;
+    max-width: calc(100% - 20px);
+  }
 }
 
 /* --- */
@@ -362,16 +377,6 @@ img {
   background-position: -10px;
 }
 
-.section-gallery.orange:before {
-  background-image: linear-gradient(45deg, transparent 75%, #EDB458 75%), linear-gradient(-45deg, transparent 75%, #EDB458 75%);
-}
-.section-gallery.argile:before {
-  background-image: linear-gradient(45deg, transparent 75%, #7E8D85 75%), linear-gradient(-45deg, transparent 75%, #7E8D85 75%);
-}
-.section-gallery.yellow:before {
-  background-image: linear-gradient(45deg, transparent 75%, #EECB65 75%), linear-gradient(-45deg, transparent 75%, #EECB65 75%);
-}
-
 .section-gallery:after {
   content: '';
   position: absolute;
@@ -389,13 +394,17 @@ img {
 .section-about {
   padding: 40px;
 
+  .back {
+    top: 20px;
+  }
+
   .print {
     cursor: pointer;
     background-image: url(/assets/icons/print.svg);
     background-position: 12px 8px;
     padding-left: 46px;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 80px;
 
     @include mobile {
@@ -438,6 +447,11 @@ img {
   margin-right: 20px;
 }
 
+.row-v-start {
+  display: flex;
+  align-items: flex-start;
+}
+
 .row-v-center {
   display: flex;
   align-items: center;
@@ -448,11 +462,16 @@ img {
   align-items: flex-end;
 }
 
+.row-h-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 /* --- */
 
 .details {
-  max-width: 400px;
+  font-family: 'Dosis', sans-serif;
 
   @include mobile {
     max-width: 100%;
@@ -471,6 +490,7 @@ img {
 
 .details > div:first-child > div {
   border-top: 1px solid #222;
+  flex-direction: column;
 }
 
 .details > div > div:first-child {
@@ -561,6 +581,10 @@ img {
 
   .img {
     max-width: 80vw;
+
+    img {
+      user-select: none !important;
+    }
   }
 
   .close {
@@ -652,7 +676,9 @@ button:focus {
 
 #map {
   width: 100%;
-  height: 600px;
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @include mobile {
     height: 800px;
