@@ -12,16 +12,23 @@
   <address class="row-col">
     <strong>Stay AppartHotel</strong><br>
     4 rue des 2 Epées<br>
-    59000 Lille<br>
-    <abbr title="Phone">Tél:</abbr> 06 06 06 06 06<br>
-    <a href="mailto:#">contact@gmail.com</a>
+    59800 Lille<br>
+    <abbr title="Phone">Tél:</abbr> <span class="tel"></span><br>
+    <a class="email"></a>
   </address>
 
   <div class="row-col">
     <p>
-      Situation exceptionnelle à 50 m de la Grand place de Lille , pied à terre idéal pour vos déplacements professionnels ou pour découvrir la région.
+    Situation exceptionnelle à 50 m de la grand place de Lille.
+    Pied à terre idéal pour vos déplacements professionnels ou pour découvrir la région.
     </p>
   </div>
 </section>
+
+<script>
+  $('.tel').text(['40', '88', '51', '87', '06'].reverse().join(' '))
+  var eliam = ['fr', 'barbry@orange', 'juliette'].reverse().join('.')
+  $('.email').text(eliam).attr('href', 'mailto:' + eliam)
+</script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqqAaaQR7yShwSBOu45lcuZRboBNZnKuA&callback=initMap"></script>

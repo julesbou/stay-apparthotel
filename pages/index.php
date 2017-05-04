@@ -9,13 +9,13 @@
   <div class="rooms row">
 
     <a href="/chambre.html" class="room">
-      <span class="room-price">à partir de<br>55€</span>
+      <span class="room-price">à partir de<br>59€</span>
       <img class="room-img" src="/assets/rooms-thumbnails/chambre/cover.jpg" data-src="/assets/rooms/chambre/cover.jpg">
       <p class="room-desc">Chambre</p>
     </a>
 
     <a href="/appartement-1.html" class="room">
-      <span class="room-price">à partir de<br>45€</span>
+      <span class="room-price">à partir de<br>99€</span>
       <img class="room-img" src="/assets/rooms-thumbnails/appartement-1/cover.jpg" data-src="/assets/rooms/appartement-1/cover.jpg">
       <p class="room-desc">Appartement - 1</p>
     </a>

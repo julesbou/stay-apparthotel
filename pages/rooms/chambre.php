@@ -4,18 +4,16 @@
     'name' => 'Chambre',
     'prix' => '59€',
     'desc' => "
-Situé au 3ème étage avec ascenseur, l'appartement est entièrement neuf et équipé.
-Salle de bain avec douche, wc suspendu et meuble vasque, sèche cheveux et linge de toilette neuf.
+Situé au 3ème étage avec ascenseur, la chambre est entièrement équipée et vient d'être rénovée.
+Salle de bain avec douche, wc suspendu et meuble vasque. Dressing aménagé, coin bureau, TV.
 <br>Installez vous, vous n'avez rien à ramener.",
-    'superficie' => '45m²',
+    'superficie' => '17m²',
     'assets' => 'chambre',
     'imgs' => array(1, 2, 5, 4, 10, 6, 7, 8, 3, 9),
     'equipments' => array(
       'Minibar',
-      'Cafetière Nespresso™',
+      'Cafetière Nespresso',
       'Bouilloire',
-      'Bureau',
-      'Armoire dressing',
       'Télévision TNT',
       'Wifi & Prise Ethernet',
       'Linge de toilette/lit',

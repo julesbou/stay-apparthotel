@@ -5,19 +5,18 @@
     'prix' => '99€',
     'desc' => "
 Situé au 3ème étage avec ascenseur, l'appartement est entièrement neuf et équipé.
-Cuisine avec coin repas, salle de bain avec douche, wc suspendu et meuble vasque, sèche cheveux et linge de toilette neuf.
+Cuisine avec coin repas (réfrigérateur, plaques induction, hotte, four, micro-ondes), salle de bain avec douche, wc suspendu et meuble vasque.
+Salon avec TV, chambre séparée par verrière, coin bureau avec prise ethernet, dressing aménagé.
+Tout est inclus, chauffage, accès internet, linge de lit et serviettes.
 <br>Installez vous, vous n'avez rien à ramener.",
-    'superficie' => '45m²',
+    'superficie' => '27m²',
     'assets' => 'appartement-1',
     'imgs' => array(7, 2, 6, 4, 10, 3, 5, 8, 9, 1),
     'equipments' => array(
       'Cuisine Equipée',
       'Vaisselle',
-      'Minibar',
-      'Cafetière Nespresso™',
+      'Cafetière Nespresso',
       'Bouilloire',
-      'Bureau',
-      'Armoire dressing',
       'Télévision TNT',
       'Wifi & Prise Ethernet',
       'Linge de toilette/lit',

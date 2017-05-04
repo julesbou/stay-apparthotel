@@ -73,8 +73,8 @@
       <h2 class="section-title">Réservation</h2>
 
       <p class="section-p" style="margin-right: 160px; text-align: justify;">
-        Vous pouvez nous joindre ici toute question ou demande de réservation.
-        Nous vous ferons une joie de vous y répondre.
+        Vous pouvez nous joindre ici pour toute question ou demande de réservation.
+        Nous nous ferons une joie de vous y répondre.
         <a href="/reglement.html">Lire le réglement intérieur.</a>
       </p>
 
