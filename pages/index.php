@@ -8,16 +8,22 @@
 
   <div class="rooms row">
 
+    <a href="/appartement-1.html" class="room">
+      <span class="room-price">à partir de<br>129€</span>
+      <img class="room-img" src="/assets/rooms-thumbnails/appartement-1/cover.jpg" data-src="/assets/rooms/appartement-1/cover.jpg">
+      <p class="room-desc">Appartement - 1</p>
+    </a>
+
+    <a href="/appartement-2.html" class="room">
+      <span class="room-price">à partir de<br>99€</span>
+      <img class="room-img" src="/assets/rooms-thumbnails/appartement-2/cover.jpg" data-src="/assets/rooms/appartement-2/cover.jpg">
+      <p class="room-desc">Appartement - 2</p>
+    </a>
+
     <a href="/chambre.html" class="room">
       <span class="room-price">à partir de<br>59€</span>
       <img class="room-img" src="/assets/rooms-thumbnails/chambre/cover.jpg" data-src="/assets/rooms/chambre/cover.jpg">
       <p class="room-desc">Chambre</p>
-    </a>
-
-    <a href="/appartement-1.html" class="room">
-      <span class="room-price">à partir de<br>99€</span>
-      <img class="room-img" src="/assets/rooms-thumbnails/appartement-1/cover.jpg" data-src="/assets/rooms/appartement-1/cover.jpg">
-      <p class="room-desc">Appartement - 1</p>
     </a>
 
   </div>

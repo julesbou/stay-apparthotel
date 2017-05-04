@@ -1,12 +1,10 @@
 
-$mobile-width: 1000px;
+$mobile-width: 1200px;
 
 @mixin mobile {
-  @media not print {
-    @media (max-width: #{$mobile-width}) and (orientation: portrait) {
+    @media screen and (max-width: #{$mobile-width}) and (orientation: portrait) {
       @content;
     }
-  }
 }
 
 html {
@@ -276,8 +274,9 @@ img {
 .room {
   position: relative;
   margin: 0 40px;
-  max-width: 400px;
-  min-width: 300px;
+  width: 25vw;
+  max-width: 300px;
+  min-width: 200px;
   display: none;
   flex: 0 0 auto;
   flex-direction: column;
@@ -340,7 +339,6 @@ img {
   width: 100%;
   height: 50px;
   background: #000;
-  opacity: .8;
   color: #E5EDF0;
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
@@ -356,10 +354,6 @@ img {
   }
 }
 
-.room:hover .room-desc {
-  opacity: 1;
-}
-
 /* --- */
 
 .section-desc {
@@ -371,6 +365,10 @@ img {
 
   .back {
     left: 80px;
+
+    @include mobile {
+      left: 40px;
+    }
   }
 
   .title {
