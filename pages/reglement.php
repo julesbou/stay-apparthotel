@@ -1,11 +1,11 @@
 <?php echo $view->extend('layout.php') ?>
 
-<section class="section section-about red">
+<section class="section section-reglement red">
   <a onclick="goBack()" class="back">Retour</a>
   <h1 class="title">Règlement Intérieur</h1>
 </section>
 
-<section class="section transparent reglement">
+<section class="section transparent section-reglement">
   <h2 class="subtitle">Conditions</h2>
   <ul>
     <li>Non fumeur</li>

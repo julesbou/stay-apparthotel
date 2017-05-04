@@ -68,12 +68,14 @@ img {
   &.back {
     position: absolute;
     top: 40px;
-    left: 80px;
+    left: 40px;
     background-image: url(/assets/icons/left-arrow.svg);
   }
 
   @include mobile {
-    font-size: 40px;
+    font-size: 50px;
+    padding: 12px 40px 12px 80px;
+    background-size: 60px;
   }
 }
 
@@ -201,6 +203,10 @@ img {
 
   @include mobile {
     height: auto;
+
+    .title {
+      text-align: left;
+    }
 
     .subtitle {
       &:before, &:after {
@@ -361,6 +367,10 @@ img {
     font-size: 200%
   }
 
+  .back {
+    left: 80px;
+  }
+
   .title {
     text-align: right;
   }
@@ -427,7 +437,7 @@ img {
     padding-left: 46px;
     position: absolute;
     top: 80px;
-    left: 80px;
+    left: 40px;
 
     @include mobile {
       display: none;
@@ -714,7 +724,7 @@ button:focus {
 
 /* --- */
 
-.reglement {
+.section-reglement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -723,6 +733,10 @@ button:focus {
 
   @include mobile {
     font-size: 200%;
+  }
+
+  .back {
+    top: 50px;
   }
 
   .subtitle {
