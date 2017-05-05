@@ -80,25 +80,21 @@
 
     </div>
 
-    <div class="row-col">
-      <label class="field">
-        Email
-        <input>
-      </label>
-
+    <form name="reservation" class="row-col">
       <label class="field">
         Nom et Prénom
-        <input>
+        <input name="name">
       </label>
 
       <label class="field">
         Message
-        <textarea rows="8" placeholder="Indiquer votre date d'arrivée et de départ"></textarea>
+        <textarea name="msg" rows="8" placeholder="Indiquer votre date d'arrivée et de départ"></textarea>
       </label>
 
       <input type="hidden" name="name" value="<?php echo $name; ?>">
 
-      <button>Envoyer votre demande</button>
+      <button type="submit">Envoyer votre demande</button>
+      <small class="after-button">ou par mail <b class="eliam"></b></small>
     </div>
 
   </div>

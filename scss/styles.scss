@@ -291,7 +291,7 @@ img {
     top: 0;
     left: 0;
     content: '';
-    border-top: 100px solid #000;
+    border-top: 80px solid #000;
     border-right: 140px solid transparent;
     z-index: 9;
   }
@@ -706,6 +706,11 @@ button {
 
 button:focus {
   background: #222;
+}
+
+.after-button {
+  float: right;
+  margin-top: 8px;
 }
 
 /* --- */
