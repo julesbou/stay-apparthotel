@@ -1,7 +1,7 @@
 <?php
   echo $view->extend('layout-room.php');
   $data = array(
-    'name' => 'Appartement - 2',
+    'name' => 'Appartement n°2',
     'prix' => '99€',
     'desc' => "
 Situé au 3ème étage avec ascenseur, l'appartement est entièrement neuf et équipé.
