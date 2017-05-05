@@ -26,6 +26,7 @@
       <p class="room-desc">Chambre</p>
     </a>
 
+
   </div>
 
   <div class="footer">

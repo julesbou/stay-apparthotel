@@ -3,35 +3,18 @@ $(function() {
   if (!$('.rooms').length) return
 
   const $imgs = $('.rooms .room img')
+  let nbImgLoaded = 0
 
-  let nbImgDone = 0
-  $imgs.each((i, $img) => $img.complete && nbImgDone++)
-
-  let nbImgRemaining = $imgs.length - nbImgDone
-  if (nbImgRemaining === 0) {
-    loaded()
-    return
-  }
-
-  console.log(nbImgRemaining, nbImgDone)
-
-  $imgs.on('load', function(event) {
-    console.log('ok', event.target)
-    nbImgRemaining--
-    if (nbImgRemaining === 0) loaded()
+  $imgs.each(function() {
+    if (this.complete) loaded()
+    else $(this).one('load', loaded)
   })
 
-  /*
-  setTimeout(() => {
-    nbImgDone = 0
-    $imgs.each((i, $img) => $img.complete && nbImgDone++)
-    nbImgRemaining = $imgs.length - nbImgDone
-    if (nbImgRemaining === 0) loaded()
-  }, 1000)
-  */
-
   function loaded() {
-    $('.rooms .room').css('display', 'flex')
-    $('img').unveil()
+    nbImgLoaded++
+    if (nbImgLoaded === $imgs.length) {
+      $('.rooms .room').css('display', 'flex')
+      $('img').unveil()
+    }
   }
 })
