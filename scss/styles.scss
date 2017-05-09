@@ -231,7 +231,10 @@ img {
   margin-top: 40px;
 }
 
+
 .subtitle {
+  overflow: hidden;
+  text-align: center;
   color: #000;
   opacity: .6;
   font-size: 36px;
@@ -239,27 +242,30 @@ img {
   margin: 0;
   font-weight: normal;
   position: relative;
+  width: 100%;
 }
-.subtitle:before,
-.subtitle:after {
+.subtitle span {
+  display: inline-block;
+  position: relative;
+}
+.subtitle span:before,
+.subtitle span:after {
   content: '';
   position: absolute;
   height: 5px;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
-  top: 24px;
-  width: calc(50vw - 300px);
-  max-width: 180px;
+  top: 20px;
+  width: 600px;
 }
-.subtitle:before {
+.subtitle span:before {
   right: 100%;
   margin-right: 15px;
 }
-.subtitle:after {
+.subtitle span:after {
   left: 100%;
   margin-left: 15px;
 }
-
 
 .rooms {
   flex: 1 0 auto;

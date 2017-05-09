@@ -6,7 +6,7 @@
 </section>
 
 <section class="section transparent section-reglement">
-  <h2 class="subtitle">Conditions</h2>
+  <h2 class="subtitle"><span>Conditions</span></h2>
   <ul>
     <li>Non fumeur</li>
     <li>Ne convient pas aux animaux</li>
@@ -15,7 +15,7 @@
     <li>Durée minimum de 2 nuits</li>
   </ul>
 
-  <h2 class="subtitle">Suppléments</h2>
+  <h2 class="subtitle"><span>Suppléments</span></h2>
   <ul>
     <li>Place de parking au Nouveau Siècle</li>
     <li>Ménage possible pour longue durée</li>

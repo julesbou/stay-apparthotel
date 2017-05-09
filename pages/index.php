@@ -30,7 +30,7 @@
   </div>
 
   <div class="footer">
-    <h2 class="subtitle">Location d'appartements courte et longue durée à Lille</h2>
+    <h2 class="subtitle"><span>Location d'appartements courte et longue durée à Lille</span></h2>
   </div>
 
 </section>
