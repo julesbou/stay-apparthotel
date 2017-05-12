@@ -414,10 +414,14 @@ img {
 
     ul {
       list-style: none;
+
+      li:before {
+        content: '\2713\0020';
+      }
     }
 
-    ul li:before {
-      content: '\2713\0020';
+    @include mobile {
+      font-size: 150%;
     }
   }
 }
@@ -523,6 +527,7 @@ img {
 
   @include mobile {
     max-width: 100%;
+    font-size: 150%;
   }
 }
 
@@ -545,6 +550,7 @@ img {
   margin-right: 20px;
   align-items: center;
   flex-basis: 100px;
+  justify-content: center;
 
   @include mobile {
     flex-basis: 200px;
