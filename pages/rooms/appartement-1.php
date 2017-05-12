@@ -11,7 +11,7 @@ Tout est inclus, chauffage, accès internet, linge de lit et serviettes.
 <br>Installez vous, vous n'avez rien à ramener.",
     'superficie' => '37m²',
     'assets' => 'appartement-1',
-    'imgs' => array(1, 3),
+    'imgs' => array(1, 2, 3, 4),
     'equipments' => array(
       'Cuisine Equipée',
       'Vaisselle',
