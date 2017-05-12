@@ -4,7 +4,7 @@
   <a href="/" class="back">Retour</a>
   <h1 class="title"><?php echo $name; ?></h1>
   <div class="row mobile-col">
-    <div class="row-col right-margin">
+    <div class="section-desc-left">
       <h2 class="section-title">Présentation</h2>
       <p class="section-p"><?php echo $desc; ?></p>
       <div class="details">
@@ -23,22 +23,19 @@
           <div>Nbr. Places</div>
           <div>2 personnes - lit double</div>
         </div>
-        <div>
-          <div>Equipements</div>
-          <div>
-            <?php foreach(array_chunk($equipments, count($equipments) / 2 + 1) as $list) { ?>
-              <ul>
-                <?php foreach($list as $el) { ?>
-                  <li><?php echo $el; ?></li>
-                <?php } ?>
-              </ul>
-            <?php } ?>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="row-col row-v-start row-h-end">
+    <div class="section-desc-right">
       <img src="/assets/rooms/<?php echo $assets; ?>/cover.jpg" class="cover">
+      <div class="equipments">
+        <?php foreach(array_chunk($equipments, count($equipments) / 2 + (count($equipments) % 2 === 0 ? 0 : 1)) as $list) { ?>
+          <ul>
+            <?php foreach($list as $el) { ?>
+              <li><?php echo $el; ?></li>
+            <?php } ?>
+          </ul>
+        <?php } ?>
+      </div>
     </div>
   </div>
 </section>
