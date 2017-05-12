@@ -3,7 +3,7 @@ $(function() {
   const to = ['fr', 'barbry@orange', 'juliette'].reverse().join('.')
   const $form = $('form[name=reservation]')
 
-  $form.find('.eliam').text(to)
+  $form.find('.eliam').text(to).attr('href', 'mailto:' + to)
 
   $form.on('submit', event => {
     event.preventDefault()

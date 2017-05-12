@@ -91,7 +91,7 @@
       <input type="hidden" name="name" value="<?php echo $name; ?>">
 
       <button type="submit">Envoyer votre demande</button>
-      <span class="after-button">ou par mail <b class="eliam"></b></span>
+      <span class="after-button">ou par mail <a class="eliam"></a></span>
     </div>
 
   </div>
