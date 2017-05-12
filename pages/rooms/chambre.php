@@ -6,7 +6,7 @@
     'desc' => "
 Situé au 3ème étage avec ascenseur, la chambre est entièrement équipée et vient d'être rénovée.
 Salle de bain avec douche, wc suspendu et meuble vasque. Dressing aménagé, coin bureau, TV.
-<br>Installez vous, vous n'avez rien à ramener.",
+",
     'superficie' => '17m²',
     'assets' => 'chambre',
     'imgs' => array(1, 2, 5, 4, 10, 6, 7, 8, 3, 9),
