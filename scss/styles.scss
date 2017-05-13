@@ -99,7 +99,7 @@ img {
 .about {
   background-image: url(/assets/icons/marker.svg);
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 30px 100%;
   background-position: left 2px;
   padding-left: 32px;
   text-decoration: none;
@@ -117,7 +117,7 @@ img {
 
   @include mobile {
     font-size: 40px;
-    background-size: 40px;
+    background-size: 40px 100%;
     background-position: -8px 8px;
   }
 }
@@ -358,6 +358,7 @@ img {
 .room .room-text {
   display: flex;
   flex-direction: column;
+  flex: 1;
   margin-left: 20px;
 
   .room-title {
@@ -396,7 +397,7 @@ img {
     display: flex;
     flex: 1;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
   }
 
@@ -417,6 +418,7 @@ img {
   }
 
   .cover {
+    flex: none;
     margin-top: 40px;
     border: 2px solid #fff;
     max-width: calc(100% - 20px);
@@ -489,7 +491,8 @@ img {
   .print {
     cursor: pointer;
     background-image: url(/assets/icons/print.svg);
-    background-position: 12px 8px;
+    background-position: 12px 4px;
+    background-size: 30px 100%;
     padding-left: 46px;
     position: absolute;
     top: 80px;
@@ -523,6 +526,7 @@ img {
 .row {
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
 
   @include mobile {
     &.mobile-col {
@@ -591,6 +595,7 @@ img {
   margin: 6px;
   position: relative;
   cursor: pointer;
+  user-select: none;
 
   &:nth-child(odd) {
     margin-left: 0;
@@ -649,6 +654,7 @@ img {
   }
 
   .img {
+    flex: none;
     max-width: 80vw;
 
     img {

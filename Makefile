@@ -6,6 +6,7 @@ init:
 	-rm -r build
 	mkdir build
 	cp node_modules/jquery/dist/jquery.slim.min.js ./build
+	cp node_modules/babel-polyfill/dist/polyfill.min.js ./build
 
 serve:
 	http-server ./build

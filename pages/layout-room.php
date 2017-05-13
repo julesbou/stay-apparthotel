@@ -92,7 +92,7 @@
 
       <button type="submit">Envoyer votre demande</button>
       <span class="after-button">ou par mail <a class="eliam"></a></span>
-    </div>
+    </form>
 
   </div>
 
