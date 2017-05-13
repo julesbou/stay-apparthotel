@@ -13,7 +13,6 @@ $(function() {
   function loaded() {
     nbImgLoaded++
     if (nbImgLoaded === $imgs.length) {
-      $('.rooms .room').css('display', 'flex')
       $('img').unveil()
     }
   }
