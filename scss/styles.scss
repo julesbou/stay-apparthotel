@@ -186,8 +186,7 @@ img {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 auto;
 
   @include mobile {
     .title {
@@ -670,7 +669,7 @@ img {
 
   .img {
     flex: none;
-    max-width: 80vw;
+    max-width: 100vmin;
 
     img {
       user-select: none !important;

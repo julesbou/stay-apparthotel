@@ -18,8 +18,8 @@ deploy:
 watch:
 	chokidar 'js/**/*.js' -c 'make js' &
 	chokidar 'scss/**.scss' -c 'make css' &
-	chokidar 'pages/**/*.php' -c 'make build' &
-	chokidar 'assets/*' 'assets/**/*' -c 'make assets'
+	chokidar 'assets/*' 'assets/**/*' -c 'make assets' &
+	node compile/watch.js
 
 js:
 	babel js/*.js  --presets=es2015 > build/scripts.js
@@ -29,7 +29,7 @@ css:
 	autoprefixer-cli -o build/styles.css build/styles.css
 
 build:
-	php php/build.php
+	php compile/build.php
 
 thumbnails:
 	-rm -r assets/rooms-thumbnails

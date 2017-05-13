@@ -19,8 +19,8 @@
 
   <div class="row-col">
     <p>
-    Situation exceptionnelle à 50 m de la grand place de Lille.
-    Pied à terre idéal pour vos déplacements professionnels ou pour découvrir la région.
+      Situation exceptionnelle à 50 m de la grand place de Lille.
+      Pied à terre idéal pour vos déplacements professionnels ou pour découvrir la région.
     </p>
   </div>
 </section>

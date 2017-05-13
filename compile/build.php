@@ -33,3 +33,5 @@ foreach($iterator as $name => $file) {
     file_put_contents($build . '/' . $dest, $html);
   }
 }
+
+echo '> done!';
