@@ -1,9 +1,24 @@
 <?php echo $view->extend('layout.php') ?>
 
 <section class="section section-desc">
-  <a href="/" class="back">Retour</a>
-  <h1 class="title"><?php echo $name; ?></h1>
-  <div class="head row mobile-col">
+
+  <div class="header">
+    <h1 class="header-title">Stay AppartHotel</h1>
+    <a href="/about.html" class="about">Où nous trouver ?</a>
+  </div>
+
+  <h2 class="subtitle"><span>Location d'appartements courte et longue durée à Lille</span></h2>
+
+  <div class="row mobile-col relative">
+    <div class="row-col">
+      <a href="/" class="back">Retour</a>
+    </div>
+    <div class="row-col room-title">
+      <h2 class="room-title"><?php echo $name; ?></h2>
+    </div>
+  </div>
+
+  <div class="row mobile-col">
     <div class="section-desc-left">
       <h2 class="section-title">Présentation</h2>
       <p class="section-p"><?php echo $desc; ?></p>

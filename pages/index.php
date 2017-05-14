@@ -1,8 +1,9 @@
 <?php echo $view->extend('layout.php') ?>
 
 <section class="section section-home">
+
   <div class="header">
-    <h1 class="title">Stay AppartHotel</h1>
+    <h1 class="header-title">Stay AppartHotel</h1>
     <a href="/about.html" class="about">Où nous trouver ?</a>
   </div>
 

@@ -67,7 +67,7 @@ img {
 
   &.back {
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 40px;
     background-image: url(/assets/icons/left-arrow.svg);
   }
@@ -81,21 +81,33 @@ img {
 .header {
   position: relative;
   margin-bottom: 40px;
+
+  .header-title {
+    color: #444;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 75px;
+    line-height: 80px;
+    margin: 0 0 0 20px;
+    display: block;
+    text-align: left;
+
+    @include mobile {
+      font-size: 60px;
+    }
+  }
 }
 
 .title {
   color: #444;
   font-family: 'Oswald', sans-serif;
   font-style: italic;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 80px;
-  margin: 0 0 0 200px;
+  margin: 0;
+  color: #fff;
   display: block;
-  text-align: left;
-
-  @include mobile {
-    text-align: right;
-  }
+  text-align: center;
 }
 
 .about {
@@ -136,6 +148,10 @@ img {
   max-width: 1200px;
   box-sizing: border-box;
   position: relative;
+
+  @include mobile {
+    padding: 40px 40px;
+  }
 }
 
 .green {
@@ -170,6 +186,7 @@ img {
 }
 
 .section-title {
+  margin-top: 0;
   font-family: 'Dosis', sans-serif;
 }
 
@@ -192,34 +209,10 @@ img {
   box-sizing: border-box;
   margin: 0 auto;
 
-  @include mobile {
-    .title {
-      text-align: left;
-    }
-
-    .subtitle {
-      &:before, &:after {
-        max-width: 50px;
-      }
-    }
+  > div {
+    display: flex;
+    flex-basis: auto;
   }
-}
-
-.section-home > div {
-  display: flex;
-  flex-basis: auto;
-}
-
-.section-home .title {
-  margin-left: 20px;
-
-  @include mobile {
-    font-size: 60px;
-  }
-}
-
-.section-home .subtitle {
-  margin-bottom: 40px;
 }
 
 
@@ -231,6 +224,7 @@ img {
   font-size: 36px;
   font-family: 'Dosis', sans-serif;
   margin: 0;
+  margin-bottom: 40px;
   font-weight: normal;
   position: relative;
   width: 100%;
@@ -405,12 +399,14 @@ img {
 
 .section-desc {
   position: relative;
+  background-image: radial-gradient(#E5EDF0, #C6CED1);
 
   .section-desc-left {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin-right: 20px;
+    margin-top: 40px;
   }
 
   .section-desc-right {
@@ -421,20 +417,26 @@ img {
     flex-direction: column;
   }
 
-  .head {
-    margin-top: 40px;
-  }
-
   .back {
-    left: 80px;
+    top: 15px;
+    left: 0px;
 
     @include mobile {
       left: 40px;
     }
   }
 
-  .title {
-    text-align: right;
+  .room-title {
+    color: #444;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+
+    > * {
+      margin: 0;
+    }
   }
 
   .break {
@@ -443,9 +445,9 @@ img {
 
   .cover {
     flex: none;
-    margin-top: 40px;
-    border: 2px solid #D2DADD;
     max-width: calc(100% - 20px);
+    margin-top: 20px;
+    border: 2px solid #fff;
   }
 
   .equipments {
@@ -503,15 +505,6 @@ img {
 .section-about {
   padding: 40px;
 
-  .back {
-    top: 20px;
-
-    @include mobile {
-      top: 50px;
-      left: 30px;
-    }
-  }
-
   .print {
     cursor: pointer;
     background-image: url(/assets/icons/print.svg);
@@ -519,8 +512,8 @@ img {
     background-size: 30px 100%;
     padding-left: 46px;
     position: absolute;
-    top: 80px;
-    left: 40px;
+    top: 50px;
+    right: 40px;
 
     @include mobile {
       display: none;
@@ -557,10 +550,14 @@ img {
       flex-direction: column;
     }
   }
+
+  .row-col {
+    flex: 1;
+  }
 }
 
-.row-col {
-  flex: 1;
+.relative {
+  position: relative;
 }
 
 /* --- */
@@ -803,10 +800,6 @@ button:focus {
     font-size: 200%;
   }
 
-  .back {
-    top: 50px;
-  }
-
   .subtitle {
     margin-top: 20px;
   }
@@ -824,11 +817,6 @@ button:focus {
 
 .section-404 {
   padding: 40px;
-
-  .back {
-    top: 50px;
-  }
-
 }
 
 
