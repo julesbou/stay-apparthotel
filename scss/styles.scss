@@ -17,7 +17,8 @@ body {
   box-sizing: border-box;
   margin: 20px;
   color: #222;
-  font-size: 20px;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 18px;
 
   &.has-overlay {
     overflow: hidden;
@@ -79,14 +80,15 @@ img {
 
 .header {
   position: relative;
-  min-height: 240px;
+  margin-bottom: 40px;
 }
 
 .title {
-  color: #fff;
+  color: #444;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
   font-size: 80px;
   line-height: 80px;
-  font-family: 'Dosis', sans-serif;
   margin: 0 0 0 200px;
   display: block;
   text-align: left;
@@ -109,13 +111,14 @@ img {
   opacity: .6;
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
 
   &:hover {
     opacity: 1;
   }
 
   @include mobile {
+    right: 0;
     font-size: 40px;
     background-size: 40px 100%;
     background-position: -8px 8px;
@@ -171,6 +174,7 @@ img {
 }
 
 .section-p {
+  margin-top: 0;
   margin-bottom: 40px;
   max-width: 500px;
 
@@ -207,14 +211,15 @@ img {
 }
 
 .section-home .title {
-  margin-left: 40px;
+  margin-left: 20px;
+
+  @include mobile {
+    font-size: 60px;
+  }
 }
 
-.section-home .footer {
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
+.section-home .subtitle {
+  margin-bottom: 40px;
 }
 
 
@@ -255,6 +260,7 @@ img {
 
 .rooms {
   flex-direction: column !important;
+  margin-bottom: 20px;
 }
 
 .room {
@@ -415,6 +421,10 @@ img {
     flex-direction: column;
   }
 
+  .head {
+    margin-top: 40px;
+  }
+
   .back {
     left: 80px;
 
@@ -434,7 +444,7 @@ img {
   .cover {
     flex: none;
     margin-top: 40px;
-    border: 2px solid #fff;
+    border: 2px solid #D2DADD;
     max-width: calc(100% - 20px);
   }
 

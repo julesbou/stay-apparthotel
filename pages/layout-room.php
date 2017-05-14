@@ -3,7 +3,7 @@
 <section class="section section-desc">
   <a href="/" class="back">Retour</a>
   <h1 class="title"><?php echo $name; ?></h1>
-  <div class="row mobile-col">
+  <div class="head row mobile-col">
     <div class="section-desc-left">
       <h2 class="section-title">Présentation</h2>
       <p class="section-p"><?php echo $desc; ?></p>

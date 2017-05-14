@@ -2,9 +2,11 @@
 
 <section class="section section-home">
   <div class="header">
-    <h1 class="title">Stay<br>AppartHotel</h1>
+    <h1 class="title">Stay AppartHotel</h1>
     <a href="/about.html" class="about">Où nous trouver ?</a>
   </div>
+
+  <h2 class="subtitle"><span>Location d'appartements courte et longue durée à Lille</span></h2>
 
   <div class="rooms row">
 
@@ -51,10 +53,6 @@
       </div>
     </a>
 
-  </div>
-
-  <div class="footer">
-    <h2 class="subtitle"><span>Location d'appartements courte et longue durée à Lille</span></h2>
   </div>
 
 </section>
