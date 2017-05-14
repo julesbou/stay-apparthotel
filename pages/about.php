@@ -1,7 +1,7 @@
 <?php echo $view->extend('layout.php') ?>
 
 <section class="section section-about blue">
-  <a href="/" class="back">Retour</a>
+  <a onclick="goBack()" class="back">Retour</a>
   <a onclick="print()" class="btn print">Print</a>
   <h1 class="title">Où nous trouver ?</h1>
 </section>

@@ -64,12 +64,17 @@ img {
   border-radius: 100px;
   padding: 4px 20px 4px 40px;
   cursor: pointer;
+  user-select: none !important;
 
   &.back {
     position: absolute;
     top: 50px;
     left: 40px;
     background-image: url(/assets/icons/left-arrow.svg);
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, .30);
   }
 
   @include mobile {
@@ -103,7 +108,7 @@ img {
   font-family: 'Oswald', sans-serif;
   font-style: italic;
   font-size: 70px;
-  line-height: 80px;
+  line-height: 60px;
   margin: 0;
   color: #fff;
   display: block;
@@ -399,7 +404,7 @@ img {
 
 .section-desc {
   position: relative;
-  background-image: radial-gradient(#E5EDF0, #C6CED1);
+  background: #C6CED1;
 
   .section-desc-left {
     display: flex;
@@ -446,8 +451,8 @@ img {
   .cover {
     flex: none;
     max-width: calc(100% - 20px);
-    margin-top: 20px;
-    border: 2px solid #fff;
+    margin-top: 10px;
+    border: 8px solid #fff;
   }
 
   .equipments {
@@ -474,30 +479,32 @@ img {
 .section-gallery {
   background: #fff !important;
   position: relative;
-}
 
-.section-gallery:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  top: -20px;
-  left: 0;
-  background-image: linear-gradient(45deg, transparent 75%, #b5c6c2 75%), linear-gradient(-45deg, transparent 75%, #b5c6c2 75%);
-  height: 20px;
-  background-size: 20px 20px;
-  background-position: -10px;
-}
 
-.section-gallery:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  bottom: -20px;
-  left: 0;
-  background-image: linear-gradient(45deg, #b5c6c2 25%, transparent 25%, transparent), linear-gradient(-45deg, #b5c6c2 25%, transparent 25%, transparent);
-  height: 20px;
-  background-size: 20px 20px;
-  background-position: -10px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    $color: #C6CED1;
+    background-image: linear-gradient(45deg, transparent 75%, $color 75%), linear-gradient(-45deg, transparent 75%, $color 75%);
+    height: 20px;
+    background-size: 20px 20px;
+    background-position: -10px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    background-image: linear-gradient(45deg, #b5c6c2 25%, transparent 25%, transparent), linear-gradient(-45deg, #b5c6c2 25%, transparent 25%, transparent);
+    height: 20px;
+    background-size: 20px 20px;
+    background-position: -10px;
+  }
 }
 
 /* --- */
