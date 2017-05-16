@@ -46,7 +46,7 @@
         <img src="/assets/rooms-thumbnails/appartement-1/cover.jpg" data-src="/assets/rooms/appartement-1/cover.jpg">
       </div>
       <div class="room-text">
-        <p class="room-title">Appartement Prestige</p>
+        <p class="room-title">Grand Appartement</p>
         <p class="room-desc">
           Le plus grand de nos appartements, vous vous y sentirez comme chez vous.
           Cuisine complète, grand dressing, coin salon, salle de bain et toilettes, coin salon avec Télé.

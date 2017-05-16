@@ -11,7 +11,7 @@
 
   <div class="row mobile-col relative">
     <div class="row-col">
-      <a href="/" class="back">Retourner à la liste des appartements</a>
+      <a href="/" class="back">Retour à la liste des appartements</a>
     </div>
     <div class="row-col room-title">
       <h2 class="room-title"><?php echo $name; ?></h2>
