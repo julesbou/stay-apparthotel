@@ -1,5 +1,14 @@
 <?php echo $view->extend('layout.php') ?>
 
+<?php $view['head'] = '
+  <meta property="fb:app_id" content="289746158116404" />
+  <meta property="og:url" content="https://stay-apparthotel.fr" />
+  <meta property="og:title" content="Stay AppartHotel" />
+  <meta property="og:description" content="Location d\'appartements courte et longue durée à Lille" />
+  <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/appartement-2/cover.jpg" />
+';
+?>
+
 <section class="section section-home">
 
   <div class="header">

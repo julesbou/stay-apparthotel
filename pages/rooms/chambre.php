@@ -2,6 +2,7 @@
   echo $view->extend('layout-room.php');
   $data = array(
     'name' => 'Chambre',
+    'url' => '/chambre.html',
     'prix' => '59€',
     'desc' => "
 Situé au 3ème étage avec ascenseur, la chambre est entièrement équipée et vient d'être rénovée.

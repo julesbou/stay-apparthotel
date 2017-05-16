@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/styles.css">
     <title>Stay AppartHotel Lille</title>
     <meta name="description" content="Location d'appart-hotel sur Lille en plein centre ville.">
+    <?php if (isset($view['head'])) echo $view['head']; ?>
   </head>
   <body>
     <script src="/polyfill.min.js"></script>

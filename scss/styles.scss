@@ -417,6 +417,10 @@ img {
     flex-direction: column;
     margin-right: 20px;
     margin-top: 40px;
+
+    @include mobile {
+      flex: none;
+    }
   }
 
   .section-desc-right {
@@ -425,6 +429,10 @@ img {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+
+    @include mobile {
+      flex: none;
+    }
   }
 
   .back {
@@ -432,7 +440,7 @@ img {
     left: 0px;
 
     @include mobile {
-      left: 40px;
+      display: none;
     }
   }
 
@@ -580,6 +588,7 @@ img {
   @include mobile {
     max-width: 100%;
     font-size: 150%;
+    margin-bottom: 40px;
   }
 }
 

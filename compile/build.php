@@ -22,6 +22,7 @@ foreach($iterator as $name => $file) {
 
     // extract $data var
     $data = array();
+    $view = $templating;
     ob_start();
     include_once $templates . '/' . $location;
     ob_get_clean();
