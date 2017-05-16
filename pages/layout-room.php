@@ -3,7 +3,7 @@
 <section class="section section-desc">
 
   <div class="header">
-    <h1 class="header-title">Stay AppartHotel</h1>
+    <h1 class="header-title"><a href="/">Stay AppartHotel</a></h1>
     <a href="/about.html" class="about">Où nous trouver ?</a>
   </div>
 

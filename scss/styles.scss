@@ -100,6 +100,11 @@ img {
     @include mobile {
       font-size: 60px;
     }
+
+    a {
+      color: #444;
+      text-decoration: none;
+    }
   }
 }
 
