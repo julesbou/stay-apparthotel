@@ -93,7 +93,7 @@ img {
     font-style: italic;
     font-size: 60px;
     line-height: 80px;
-    margin: 0 0 0 20px;
+    margin: 0;
     display: block;
     text-align: left;
 
@@ -141,14 +141,13 @@ img {
   opacity: .6;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 0;
 
   &:hover {
     opacity: 1;
   }
 
   @include mobile {
-    right: 0;
     font-size: 40px;
     background-size: 40px 100%;
     background-position: -8px 8px;

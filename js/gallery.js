@@ -18,7 +18,17 @@ $(function() {
       .find('.img').empty().append(`<img src="${currImg}" />`)
   })
 
-  $galleryFullpage.find('.left').on('click', function() {
+  $galleryFullpage.find('.left').on('click', prev)
+  $galleryFullpage.find('.right').on('click', next)
+  $galleryFullpage.find('.close').on('click', close)
+
+  $('body').on('keyup', function(event) {
+    if (event.keyCode === 37) prev() // left
+    if (event.keyCode === 39) next() // right
+    if (event.keyCode === 27) close() // ESC
+  })
+
+  function prev() {
     let currIndex = imgs.findIndex(img => img === currImg)
     if (currIndex === 0) currIndex = imgs.length - 1
     else currIndex -= 1
@@ -26,9 +36,9 @@ $(function() {
 
     $galleryFullpage
       .find('.img').empty().append(`<img src="${currImg}" />`)
-  })
+  }
 
-  $galleryFullpage.find('.right').on('click', function() {
+  function next() {
     let currIndex = imgs.findIndex(img => img === currImg)
     if (currIndex === imgs.length - 1) currIndex = 0
     else currIndex += 1
@@ -36,11 +46,10 @@ $(function() {
 
     $galleryFullpage
       .find('.img').empty().append(`<img src="${currImg}" />`)
-  })
+  }
 
-  $galleryFullpage.find('.close').on('click', function() {
+  function close() {
     $('body').removeClass('has-overlay')
     $galleryFullpage.removeClass('show')
-  })
-
+  }
 })
