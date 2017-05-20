@@ -16,20 +16,9 @@
     <a href="/about.html" class="about">Où nous trouver ?</a>
   </div>
 
-  <h2 class="subtitle"><span>Location d'appartements courte et longue durée à Lille</span></h2>
-
-  <div class="row mobile-col relative">
-    <div class="row-col">
-      <a href="/" class="back">Retour à la liste des appartements</a>
-    </div>
-    <div class="row-col room-title">
-      <h2 class="room-title"><?php echo $name; ?></h2>
-    </div>
-  </div>
-
-  <div class="row mobile-col">
+  <div class="row mobile-col section-desc-container">
     <div class="section-desc-left">
-      <h2 class="section-title">Présentation</h2>
+    <h2 class="section-title"><?php echo $name; ?></h2>
       <p class="section-p"><?php echo $desc; ?></p>
       <div class="details">
         <div>

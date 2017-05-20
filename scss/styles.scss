@@ -91,11 +91,19 @@ img {
     color: #444;
     font-family: 'Oswald', sans-serif;
     font-style: italic;
-    font-size: 75px;
+    font-size: 60px;
     line-height: 80px;
     margin: 0 0 0 20px;
     display: block;
     text-align: left;
+
+    /*
+    background-image: url(/assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: left center;
+    padding-left: 80px;
+    */
 
     @include mobile {
       font-size: 60px;
@@ -264,7 +272,6 @@ img {
 
 .rooms {
   flex-direction: column !important;
-  margin-bottom: 20px;
 }
 
 .room {
@@ -275,50 +282,30 @@ img {
   text-decoration: none;
   box-sizing: border-box;
 
-  @include mobile {
-    flex-direction: column;
-  }
-
   &:not(:last-child) {
-    margin-bottom: 50px;
-  }
-
-  @mixin bg($color) {
-    background-color: $color;
-
-    &:after {
-      background-image: linear-gradient(45deg, transparent 75%, $color 75%),linear-gradient(-45deg, transparent 75%, $color 75%);
-    }
-
-    &:hover {
-      background-color: darken($color, 1%);
-    }
+    margin-bottom: 20px;
   }
 
   &:first-child {
-    @include bg(#8895B3);
+    .room-title {
+      background: #6B818C;
+    }
   }
 
   &:nth-child(2) {
-    @include bg(#6B818C);
+    .room-title {
+      background: #5E6472;
+    }
   }
 
   &:last-child {
-    @include bg(#5E6472);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 0;
-    height: 20px;
-    background-size: 20px 20px;
-    background-position: -10px;
+    .room-title {
+      background: #433E53;
+    }
   }
 
   @include mobile {
+    flex-direction: column;
     width: auto;
     margin-bottom: 40px;
   }
@@ -386,7 +373,6 @@ img {
   }
 
   .room-title {
-    background: rgba(0, 0, 0, .5);
     color: #fff;
     text-align: center;
     font-family: 'Dosis', sans-serif;
@@ -411,12 +397,15 @@ img {
   position: relative;
   background: #C6CED1;
 
+  .section-desc-container {
+    margin-top: 20px;
+  }
+
   .section-desc-left {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin-right: 20px;
-    margin-top: 40px;
 
     @include mobile {
       flex: none;
@@ -441,19 +430,6 @@ img {
 
     @include mobile {
       display: none;
-    }
-  }
-
-  .room-title {
-    color: #444;
-    font-family: 'Oswald', sans-serif;
-    font-style: italic;
-    font-size: 50px;
-    display: block;
-    text-align: center;
-
-    > * {
-      margin: 0;
     }
   }
 
