@@ -32,7 +32,7 @@ $(function() {
     urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
 
     // Set up our request
-    XHR.open('POST', window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'http://localhost:8000');
+    XHR.open('POST', window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://stayapparthotel-mailer.herokuapp.com');
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

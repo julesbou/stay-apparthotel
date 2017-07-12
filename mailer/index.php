@@ -3,13 +3,17 @@
 require_once __DIR__.'/vendor/autoload.php';
 
 $app = new Silex\Application();
-$app['debug'] = true;
+//$app['debug'] = true;
 
 putenv('SENDGRID_API_KEY=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');
 
 $app->register(new JDesrosiers\Silex\Provider\CorsServiceProvider(), [
   "cors.allowOrigin" => "*",
 ]);
+
+$app->get('/', function() {
+  return 'hello world';
+});
 
 $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) {
   $email = $request->get('email');
