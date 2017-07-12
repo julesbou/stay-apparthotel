@@ -16,7 +16,7 @@ $(function() {
 
     const email = $form.find('[name=email]').val()
     const name = $form.find('[name=name]').val()
-    const body = encodeURIComponent($form.find('[name=msg]').val())
+    const body = $form.find('[name=msg]').val()
     const room = $form.find('[name=room]').val()
 
     sendData({ email, name, body, room }, (status) => {
