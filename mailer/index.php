@@ -41,7 +41,7 @@ $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use 
   $sg = new \SendGrid($apiKey);
 
   $response = $sg->client->mail()->send()->post($mail);
-  $app['monolog']->log("$email - $name - $body " . $response->statusCode());
+  $app['monolog']->info("$email - $name - $body " . $response->statusCode());
 
   return new Symfony\Component\HttpFoundation\Response('done', $response->statusCode());
 });
