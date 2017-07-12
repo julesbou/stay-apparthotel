@@ -37,7 +37,7 @@
 
     <a href="/appartement-2.html" class="room">
       <div class="room-img">
-        <span>à partir de<br>99€</span>
+        <span>à partir de<br>89€</span>
         <img src="/assets/rooms-thumbnails/appartement-2/cover.jpg" data-src="/assets/rooms/appartement-2/cover.jpg">
       </div>
       <div class="room-text">
@@ -51,7 +51,7 @@
 
     <a href="/appartement-1.html" class="room">
       <div class="room-img">
-        <span>à partir de<br>129€</span>
+        <span>à partir de<br>99€</span>
         <img src="/assets/rooms-thumbnails/appartement-1/cover.jpg" data-src="/assets/rooms/appartement-1/cover.jpg">
       </div>
       <div class="room-text">

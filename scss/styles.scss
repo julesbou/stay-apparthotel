@@ -161,7 +161,7 @@ img {
   margin: 20px auto;
   padding: 40px 80px;
   flex-direction: column;
-  background-color: #b5c6c2;
+  background: #b5c6c2;
   max-width: 1200px;
   box-sizing: border-box;
   position: relative;
@@ -312,7 +312,6 @@ img {
 
 .room .room-img {
   position: relative;
-  border: 2px solid #D2DADD;
 
   @include mobile {
     border: none;
@@ -392,9 +391,12 @@ img {
 
 /* --- */
 
+
+$sectionDescColor: #D3DBDE;
+
 .section-desc {
   position: relative;
-  background: #C6CED1;
+  background: $sectionDescColor;
 
   .section-desc-container {
     margin-top: 20px;
@@ -475,7 +477,7 @@ img {
     width: 100%;
     top: -20px;
     left: 0;
-    $color: #C6CED1;
+    $color: $sectionDescColor;
     background-image: linear-gradient(45deg, transparent 75%, $color 75%), linear-gradient(-45deg, transparent 75%, $color 75%);
     height: 20px;
     background-size: 20px 20px;

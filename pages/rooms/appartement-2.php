@@ -3,7 +3,7 @@
   $data = array(
     'name' => 'Appartement',
     'url' => '/appartement-2.html',
-    'prix' => '99€',
+    'prix' => '89€',
     'desc' => "
 Situé au 3ème étage avec ascenseur, l'appartement est entièrement neuf et équipé.
 Cuisine équipée complète, salle de bain avec douche, wc suspendu et meuble vasque.
