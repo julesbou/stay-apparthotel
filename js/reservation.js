@@ -21,7 +21,9 @@ $(function() {
 
     sendData({ email, name, body, room }, (status) => {
       if (status !== 202) {
-        alert('Une erreur est survenue - Votre message n\'a pas pu être envoyé - Merci de nous contacter par mail juliette.barbry@orange.fr')
+        alert('Une erreur est survenue. Votre message n\'a pas pu être envoyé. Merci de nous contacter par mail juliette.barbry@orange.fr')
+      } else {
+        alert('Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.')
       }
     })
   })
