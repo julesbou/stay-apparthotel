@@ -22,8 +22,8 @@ $app->register(new \Silex\Provider\MonologServiceProvider(), array(
 
 $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use ($app) {
   $email = $request->get('email');
-  $room = $request->get('room');
   $name = $request->get('name');
+  $room = $request->get('room');
   $body = $request->get('body');
 
   $from = new SendGrid\Email(null, $email);
@@ -32,6 +32,7 @@ $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use 
   //$to = new SendGrid\Email(null, "juliette.barbry@orange.fr");
   $content = new SendGrid\Content("text/html", $body);
   $mail = new SendGrid\Mail($from, $subject, $to, $content);
+  $mail->personalization[0]->addSubstitution("-email-", $email);
   $mail->personalization[0]->addSubstitution("-name-", $name);
   $mail->personalization[0]->addSubstitution("-room-", $room);
   $mail->setTemplateId("f9fe93e7-bb0d-4201-b9ce-3a90135358a0");
