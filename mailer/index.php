@@ -28,8 +28,8 @@ $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use 
 
   $from = new SendGrid\Email(null, $email);
   $subject = "Stay AppartHotel - $room - Nouveau message";
-  $to = new SendGrid\Email(null, "jules.boussekeyt@gmail.com");
-  //$to = new SendGrid\Email(null, "juliette.barbry@orange.fr");
+  //$to = new SendGrid\Email(null, "jules.boussekeyt@gmail.com");
+  $to = new SendGrid\Email(null, "juliette.barbry@orange.fr");
   $content = new SendGrid\Content("text/html", $body);
   $mail = new SendGrid\Mail($from, $subject, $to, $content);
   $mail->personalization[0]->addSubstitution("-email-", $email);
