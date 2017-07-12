@@ -92,6 +92,10 @@
 
     <form name="reservation" class="row-col">
       <label class="field">
+        Email
+        <input name="email">
+      </label>
+      <label class="field">
         Nom et Prénom
         <input name="name">
       </label>

@@ -1,3 +1,4 @@
 build/
 .sass-cache/
 assets/rooms-thumbnails/
+mailer/vendor/
