@@ -105,7 +105,7 @@
         <textarea name="msg" rows="8" placeholder="Indiquer votre date d'arrivée et de départ"></textarea>
       </label>
 
-      <input type="hidden" name="name" value="<?php echo $name; ?>">
+      <input type="hidden" name="room" value="<?php echo $name; ?>">
 
       <button type="submit">Envoyer votre demande</button>
       <span class="after-button">ou par mail <a class="eliam"></a></span>

@@ -17,6 +17,7 @@ $app->get('/', function() {
 
 $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) {
   $email = $request->get('email');
+  $room = $request->get('room');
   $name = $request->get('name');
   $body = $request->get('body');
 
@@ -26,6 +27,7 @@ $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) {
   $content = new SendGrid\Content("text/html", $body);
   $mail = new SendGrid\Mail($from, $subject, $to, $content);
   $mail->personalization[0]->addSubstitution("-name-", $name);
+  $mail->personalization[0]->addSubstitution("-room-", $room);
   $mail->setTemplateId("f9fe93e7-bb0d-4201-b9ce-3a90135358a0");
 
 
