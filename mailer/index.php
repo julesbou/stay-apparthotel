@@ -29,7 +29,7 @@ $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use 
   $body = $request->get('body');
 
   $from = new SendGrid\Email(null, $email);
-  $subject = "Stay AppartHotel - $room - Nouveau message";
+  $subject = "Stay AppartHotel - $room - Nouveau message - $name";
   $to = new SendGrid\Email(null, $isLocalhost ? "jules.boussekeyt@gmail.com" : "stay.apparthotel@gmail.com");
   $content = new SendGrid\Content("text/html", $body);
   $mail = new SendGrid\Mail($from, $subject, $to, $content);
