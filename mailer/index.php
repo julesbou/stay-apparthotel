@@ -3,7 +3,9 @@
 require_once __DIR__.'/vendor/autoload.php';
 
 $app = new Silex\Application();
-//$app['debug'] = true;
+
+$isLocalhost = $_SERVER['SERVER_NAME'] === 'localhost';
+$app['debug'] = $isLocalhost;
 
 putenv('SENDGRID_API_KEY=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');
 
@@ -20,7 +22,7 @@ $app->register(new \Silex\Provider\MonologServiceProvider(), array(
   //'monolog.level' => \Monolog\Logger::WARNING,
 ));
 
-$app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use ($app) {
+$app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use ($app, $isLocalhost) {
   $email = $request->get('email');
   $name = $request->get('name');
   $room = $request->get('room');
@@ -28,8 +30,7 @@ $app->post('/', function(Symfony\Component\HttpFoundation\Request $request) use 
 
   $from = new SendGrid\Email(null, $email);
   $subject = "Stay AppartHotel - $room - Nouveau message";
-  //$to = new SendGrid\Email(null, "jules.boussekeyt@gmail.com");
-  $to = new SendGrid\Email(null, "juliette.barbry@orange.fr");
+  $to = new SendGrid\Email(null, $isLocalhost ? "jules.boussekeyt@gmail.com" : "stay.apparthotel@gmail.com");
   $content = new SendGrid\Content("text/html", $body);
   $mail = new SendGrid\Mail($from, $subject, $to, $content);
   $mail->personalization[0]->addSubstitution("-email-", $email);

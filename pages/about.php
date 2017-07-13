@@ -27,8 +27,7 @@
 
 <script>
   $('.tel').text(['40', '88', '51', '87', '06'].reverse().join(' '))
-  var eliam = ['fr', 'barbry@orange', 'juliette'].reverse().join('.')
-  $('.email').text(eliam).attr('href', 'mailto:' + eliam)
+  $('.email').text(eliam).attr('href', 'mailto:' + window.eliam)
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqqAaaQR7yShwSBOu45lcuZRboBNZnKuA&callback=initMap"></script>

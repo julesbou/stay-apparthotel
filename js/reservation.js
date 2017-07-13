@@ -1,9 +1,8 @@
 $(function() {
 
-  const to = ['fr', 'barbry@orange', 'juliette'].reverse().join('.')
   const $form = $('form[name=reservation]')
 
-  $form.find('.eliam').text(to).attr('href', 'mailto:' + to)
+  $form.find('.eliam').text(window.eliam).attr('href', 'mailto:' + window.eliam)
 
   $form.on('submit', event => {
     event.preventDefault()
@@ -21,7 +20,7 @@ $(function() {
 
     sendData({ email, name, body, room }, (status) => {
       if (status !== 202 && status !== 200) {
-        alert('Une erreur est survenue. Votre message n\'a pas pu être envoyé. Merci de nous contacter par mail juliette.barbry@orange.fr')
+        alert('Une erreur est survenue. Votre message n\'a pas pu être envoyé. Merci de nous contacter par mail ' + window.eliam)
       } else {
         alert('Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.')
       }

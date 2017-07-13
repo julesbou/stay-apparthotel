@@ -11,6 +11,7 @@
   <body>
     <script src="/polyfill.min.js"></script>
     <script src="/jquery.slim.min.js"></script>
+    <script> window.eliam = ['com', 'apparthotel@gmail', 'stay'].reverse().join('.') </script>
     <script src="/scripts.js"></script>
     <?php echo $content; ?>
   </body>
