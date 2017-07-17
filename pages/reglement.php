@@ -2,7 +2,7 @@
 
 <section class="section section-reglement red">
   <a onclick="goBack()" class="back">Retour</a>
-  <h1 class="title">Règlement Intérieur</h1>
+  <h1 class="title">Durant votre réservation...</h1>
 </section>
 
 <section class="section transparent section-reglement">

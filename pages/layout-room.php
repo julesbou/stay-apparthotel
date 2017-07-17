@@ -38,8 +38,9 @@
         </div>
       </div>
       <div class="btns">
-        <a class="btn btn-reservation">Réserver</a>
+        <a class="btn btn-reservation" href="/booking.html">Réservation</a>
         <a class="btn btn-calendar">Disponibilités</a>
+        <a class="btn btn-rules" href="/reglement.html">Conditions</a>
       </div>
     </div>
     <div class="section-desc-right">
@@ -84,16 +85,20 @@
   <div class="row mobile-col">
 
     <div class="row-col">
-      <h2 class="section-title">Réservation</h2>
+      <h2 class="section-title">Contact</h2>
 
       <p class="section-p" style="margin-right: 160px; text-align: justify;">
         Vous pouvez nous joindre ici pour toute question ou demande de réservation.
       </p>
 
-      <p class="section-p btns">
-        <a class="btn btn-rules" href="/reglement.html">Réglement intérieur</a>
+      <!--
+      <div class="section-p btns">
+        <a class="btn btn-reservation" href="/booking.html">Réservation</a>
         <a class="btn btn-calendar">Disponibilités</a>
-      </p>
+        <a class="btn btn-rules" href="/reglement.html">Conditions</a>
+      </div>
+      -->
+
     </div>
 
     <form name="reservation" class="row-col">
