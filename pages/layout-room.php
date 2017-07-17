@@ -37,6 +37,10 @@
           <div>2 personnes - lit double</div>
         </div>
       </div>
+      <div class="btns">
+        <a class="btn btn-reservation">Réserver</a>
+        <a class="btn btn-calendar">Disponibilités</a>
+      </div>
     </div>
     <div class="section-desc-right">
       <img src="/assets/rooms/<?php echo $assets; ?>/cover.jpg" class="cover">
@@ -67,7 +71,7 @@
     <?php } ?>
   </div>
 
-  <div class="gallery-fullpage">
+  <div class="modal modal-gallery">
     <div class="img"></div>
     <div class="left"></div>
     <div class="right"></div>
@@ -84,10 +88,12 @@
 
       <p class="section-p" style="margin-right: 160px; text-align: justify;">
         Vous pouvez nous joindre ici pour toute question ou demande de réservation.
-        Nous nous ferons une joie de vous y répondre.
-        <a href="/reglement.html">Lire le réglement intérieur.</a>
       </p>
 
+      <p class="section-p btns">
+        <a class="btn btn-rules" href="/reglement.html">Réglement intérieur</a>
+        <a class="btn btn-calendar">Disponibilités</a>
+      </p>
     </div>
 
     <form name="reservation" class="row-col">
@@ -114,3 +120,7 @@
   </div>
 
 </section>
+
+<div class="modal modal-calendar">
+  <div class="close"></div>
+</div>

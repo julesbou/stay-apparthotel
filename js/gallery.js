@@ -3,7 +3,7 @@ $(function() {
   if (!$('.gallery').length) return
 
   const $gallery = $('.gallery')
-  const $galleryFullpage = $('.gallery-fullpage')
+  const $galleryModal = $('.modal-gallery')
   const $imgs = $('.gallery .img')
 
   $gallery.find('img').unveil()
@@ -14,13 +14,13 @@ $(function() {
   $imgs.on('click', function(event) {
     $('body').addClass('has-overlay')
     currImg = $(event.target).find('img').attr('src')
-    $galleryFullpage.addClass('show')
+    $galleryModal.addClass('show')
       .find('.img').empty().append(`<img src="${currImg}" />`)
   })
 
-  $galleryFullpage.find('.left').on('click', prev)
-  $galleryFullpage.find('.right').on('click', next)
-  $galleryFullpage.find('.close').on('click', close)
+  $galleryModal.find('.left').on('click', prev)
+  $galleryModal.find('.right').on('click', next)
+  $galleryModal.find('.close').on('click', close)
 
   $('body').on('keyup', function(event) {
     if (event.keyCode === 37) prev() // left
@@ -34,7 +34,7 @@ $(function() {
     else currIndex -= 1
     currImg = imgs[currIndex]
 
-    $galleryFullpage
+    $galleryModal
       .find('.img').empty().append(`<img src="${currImg}" />`)
   }
 
@@ -44,12 +44,12 @@ $(function() {
     else currIndex += 1
     currImg = imgs[currIndex]
 
-    $galleryFullpage
+    $galleryModal
       .find('.img').empty().append(`<img src="${currImg}" />`)
   }
 
   function close() {
     $('body').removeClass('has-overlay')
-    $galleryFullpage.removeClass('show')
+    $galleryModal.removeClass('show')
   }
 })

@@ -38,6 +38,7 @@ a {
 }
 
 p {
+  margin: 0;
   line-height: 1.5;
 }
 
@@ -438,6 +439,15 @@ $sectionDescColor: #D3DBDE;
     display: block;
   }
 
+  .btns {
+    text-align: center;
+    display: flex;
+
+    .btn {
+      flex: 1;
+    }
+  }
+
   .cover {
     flex: none;
     max-width: calc(100% - 20px);
@@ -560,6 +570,7 @@ $sectionDescColor: #D3DBDE;
 /* --- */
 
 .details {
+  margin-bottom: 50px;
   font-family: 'Dosis', sans-serif;
 
   @include mobile {
@@ -598,6 +609,39 @@ $sectionDescColor: #D3DBDE;
 .details > div > div:last-child {
   flex: 1;
   border-color: #777;
+}
+
+/* --- */
+
+.btns {
+}
+
+.btns .btn {
+  display: inline-block;
+  padding-left: 50px;
+  margin: 0 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.btn-reservation {
+    background-image: url(/assets/icons/booking.svg);
+    background-position: 14px 9px;
+  }
+  &.btn-calendar {
+    background-image: url(/assets/icons/calendar.svg);
+    background-size: 26px;
+    background-position: 16px 10px;
+  }
+  &.btn-rules {
+    background-image: url(/assets/icons/rules.svg);
+    background-position: 14px 9px;
+  }
 }
 
 /* --- */
@@ -656,7 +700,10 @@ $sectionDescColor: #D3DBDE;
   }
 }
 
-.gallery-fullpage {
+
+/* --- */
+
+.modal {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -670,15 +717,6 @@ $sectionDescColor: #D3DBDE;
 
   &.show {
     display: flex;
-  }
-
-  .img {
-    flex: none;
-    max-width: 100vmin;
-
-    img {
-      user-select: none !important;
-    }
   }
 
   .close {
@@ -695,6 +733,17 @@ $sectionDescColor: #D3DBDE;
     border-radius: 50%;
     padding: 4px;
     cursor: pointer;
+  }
+}
+
+.modal-gallery{
+  .img {
+    flex: none;
+    max-width: 100vmin;
+
+    img {
+      user-select: none !important;
+    }
   }
 
   .left, .right {

@@ -1,5 +1,16 @@
 $(function() {
 
+
+  // scroll
+
+  $('.btn-reservation').on('click', () => {
+    $('html, body').animate({
+      scrollTop: $('.section-contact').offset().top
+    }, 400)
+  })
+
+  // form
+
   const $form = $('form[name=reservation]')
 
   $form.find('.eliam').text(window.eliam).attr('href', 'mailto:' + window.eliam)
@@ -58,5 +69,4 @@ $(function() {
     // Finally, send our data.
     XHR.send(urlEncodedData);
   }
-
 })
