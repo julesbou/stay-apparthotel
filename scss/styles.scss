@@ -287,18 +287,27 @@ img {
   }
 
   &:first-child {
+    .room-img {
+      border-color: #6B818C;
+    }
     .room-title {
       background: #6B818C;
     }
   }
 
   &:nth-child(2) {
+    .room-img {
+      border-color: #5E6472;
+    }
     .room-title {
       background: #5E6472;
     }
   }
 
   &:last-child {
+    .room-img {
+      border-color: #433E53;
+    }
     .room-title {
       background: #433E53;
     }
@@ -313,6 +322,7 @@ img {
 
 .room .room-img {
   position: relative;
+  border: 1px dashed;
 
   @include mobile {
     border: none;
@@ -320,6 +330,7 @@ img {
   }
 
   &:before {
+    display: none; // disable for now
     position: absolute;
     top: 0;
     left: 0;
@@ -335,6 +346,7 @@ img {
   }
 
   span {
+    display: none; // disable for now
     position: absolute;
     top: 1px;
     left: 0;
