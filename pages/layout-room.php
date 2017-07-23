@@ -24,8 +24,15 @@
         <div>
           <div>Prix</div>
           <div>
-            à partir de <?php echo $prix; ?> par nuit
-            <small class="break">(possibilité de prix à la semaine ou au mois)</small>
+            <?php if ($url === '/chambre.html') { ?>
+              <?php echo $prix; ?> par nuit
+            <?php } else { ?>
+              <?php echo $prix; ?> par nuit
+              <br>
+              <?php echo $prixSemaine; ?> par semaine
+              <br>
+              <?php echo $prixMois; ?> par mois
+            <?php } ?>
           </div>
         </div>
         <div>
@@ -38,8 +45,8 @@
         </div>
       </div>
       <div class="btns">
-        <a class="btn btn-reservation" href="/booking.html">Réservation</a>
-        <a class="btn btn-calendar">Disponibilités</a>
+        <!--<a class="btn btn-reservation" href="/booking.html">Réservation</a>-->
+        <!--<a class="btn btn-calendar">Disponibilités</a>-->
         <a class="btn btn-rules" href="/reglement.html">Conditions</a>
       </div>
     </div>
@@ -88,7 +95,7 @@
       <h2 class="section-title">Contact</h2>
 
       <p class="section-p" style="margin-right: 160px; text-align: justify;">
-        Vous pouvez nous joindre ici pour toute question ou demande de réservation.
+        Pour toute demande ou question.
       </p>
 
       <!--
