@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="btns">
-        <!--<a class="btn btn-reservation" href="/booking.html">Réservation</a>-->
+        <a class="btn btn-reservation" href="/booking.html">Réservation</a>
         <!--<a class="btn btn-calendar">Disponibilités</a>-->
         <a class="btn btn-rules" href="/reglement.html">Conditions</a>
       </div>
