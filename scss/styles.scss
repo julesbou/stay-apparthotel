@@ -15,9 +15,11 @@ html {
 body {
   min-height: calc(100% - 40px);
   box-sizing: border-box;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
   color: #222;
-  font-family: 'Playfair Display', sans-serif;
+  //font-family: 'Playfair Display', sans-serif;
+  font-family: NobelBook;
   font-size: 18px;
 
   &.has-overlay {
@@ -84,7 +86,8 @@ img {
   }
 }
 
-.header {
+// TODO
+.__header {
   position: relative;
   margin-bottom: 40px;
 
@@ -217,6 +220,16 @@ img {
     max-width: 100%;
   }
 }
+
+
+/* --- */
+
+@import './_header.scss';
+@import './_menu.scss';
+@import './_tile.scss';
+@import './_map.scss';
+@import './_contact.scss';
+@import './_footer.scss';
 
 /* --- */
 
@@ -694,9 +707,9 @@ $sectionDescColor: #D3DBDE;
 }
 
 .gallery .img {
-  width: calc(50% - 12px);
+  width: calc(50% - 40px);
   display: block;
-  margin: 6px;
+  margin: 20px;
   position: relative;
   cursor: pointer;
   user-select: none;
@@ -815,100 +828,38 @@ $sectionDescColor: #D3DBDE;
 
 /* --- */
 
-.field {
-  display: block;
-  margin-bottom: 12px;
-  font-weight: bold;
-  font-family: 'Dosis', sans-serif;
-}
-
-.field input,
-.field textarea {
-  background: #fff;
-  display: block;
-  padding: 10px 8px;
-  margin-top: 6px;
-  font-size: 18px;
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #222;
-  border-radius: 2px;
-}
-
-button {
-  cursor: pointer;
-  background: #000;
-  color: #fff;
-  border-radius: 50px;
-  border: none;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-family: 'Dosis', sans-serif;
-  outline: none;
-
-  @include mobile {
-    padding: 16px 32px;
-  }
-}
-
-button:focus {
-  background: #222;
-}
-
-.after-button {
-  float: right;
-  margin-top: 8px;
-  font-size: 18px;
-}
-
-/* --- */
-
-#map {
-  width: 100%;
-  height: 400px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @include mobile {
-    height: 800px;
-  }
-}
-
-
-/* --- */
-
-.section-reglement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-
-  @include mobile {
-    font-size: 200%;
-  }
-
-  .subtitle {
-    margin: 0 0 20px;
-  }
-
-  ul {
-    margin: 0;
-    margin-bottom: 40px;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  p {
-    max-width: 750px;
-  }
-}
-
-/* --- */
-
 .section-404 {
   padding: 40px;
 }
 
 
 @import 'print.scss';
+
+
+@font-face {
+  font-family: NobelBook;
+  src: url('/assets/fonts/Nobel-Book.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Nobel-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/Nobel-Book.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/Nobel-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('/assets/fonts/Nobel-Book.svg#Nobel-Book') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: NobelBold;
+  src: url('/assets/fonts/Nobel-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Nobel-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/Nobel-Bold.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/Nobel-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('/assets/fonts/Nobel-Bold.svg#Nobel-Bold') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: AmbroiseStdFirmin;
+  src: url('/assets/fonts/AmbroiseStdFirmin-Light.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/AmbroiseStdFirmin-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/AmbroiseStdFirmin-Light.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/AmbroiseStdFirmin-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('/assets/fonts/AmbroiseStdFirmin-Light.svg#AmbroiseStdFirmin-Light') format('svg'); /* Legacy iOS */
+}
+

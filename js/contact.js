@@ -1,19 +1,6 @@
 $(function() {
 
-
-  // scroll
-
-  $('.btn-reservation').on('click', () => {
-    $('html, body').animate({
-      scrollTop: $('.section-contact').offset().top
-    }, 400)
-  })
-
-  // form
-
-  const $form = $('form[name=reservation]')
-
-  $form.find('.eliam').text(window.eliam).attr('href', 'mailto:' + window.eliam)
+  const $form = $('form[name=contact]')
 
   $form.on('submit', event => {
     event.preventDefault()
@@ -27,9 +14,9 @@ $(function() {
     const email = $form.find('[name=email]').val()
     const name = $form.find('[name=name]').val()
     const body = $form.find('[name=msg]').val()
-    const room = $form.find('[name=room]').val()
 
-    sendData({ email, name, body, room }, (status) => {
+    // TODO use jquery
+    sendData({ email, name, body }, (status) => {
       if (status !== 202 && status !== 200) {
         alert('Une erreur est survenue. Votre message n\'a pas pu être envoyé. Merci de nous contacter par mail ' + window.eliam)
       } else {
@@ -37,7 +24,6 @@ $(function() {
       }
     })
   })
-
 
   function sendData(data, cb) {
     var XHR = new XMLHttpRequest();
