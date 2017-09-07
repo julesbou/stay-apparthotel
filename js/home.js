@@ -1,8 +1,9 @@
 $(function() {
 
-  if (!$('.rooms').length) return
+  /*
+  if (!$('.tile').length) return
 
-  const $imgs = $('.rooms .room img')
+  const $imgs = $('.tile .tile-picture')
   let nbImgLoaded = 0
 
   $imgs.each(function() {
@@ -16,4 +17,5 @@ $(function() {
       $('img').unveil()
     }
   }
+  */
 })

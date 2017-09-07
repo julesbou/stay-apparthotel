@@ -3,136 +3,73 @@
 <?php $view['head'] = '
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr' . $url . '" />
-  <meta property="og:title" content="' . $name . ' - Location d\'appartements courte et moyenne durée à Lille" />
+  <meta property="og:title" content="' . $name . ' - Locations courtes et moyennes durée EN PLEIN COEUR DE Lille." />
   <meta property="og:description" content="' . $desc . '" />
   <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/' . $assets . '/cover.jpg" />
 ';
 ?>
 
-<section class="section section-desc">
-
-  <div class="header">
-    <h1 class="header-title"><a href="/">Stay AppartHotel</a></h1>
-    <a href="/about.html" class="about">Où nous trouver ?</a>
-  </div>
-
-  <div class="row mobile-col section-desc-container">
-    <div class="section-desc-left">
-    <h2 class="section-title"><?php echo $name; ?></h2>
-      <p class="section-p"><?php echo $desc; ?></p>
-      <div class="details">
-        <div>
-          <div>Prix</div>
+<section class="overview">
+  <div class="container">
+    <div class="row mobile-col">
+      <div class="overview-left">
+        <h2><?php echo $name; ?></h2>
+        <p><?php echo $desc; ?></p>
+        <div class="overview-details">
           <div>
-            <?php if ($url === '/chambre.html') { ?>
-              <?php echo $prix; ?> par nuit
-            <?php } else { ?>
-              <?php echo $prix; ?> par nuit
-              <br>
-              <?php echo $prixSemaine; ?> par semaine
-              <br>
-              <?php echo $prixMois; ?> par mois
-            <?php } ?>
+            <div>Prix</div>
+            <div>
+              <?php if ($url === '/chambre.html') { ?>
+                <?php echo $prix; ?> par nuit
+              <?php } else { ?>
+                <?php echo $prix; ?> par nuit
+                <br>
+                <?php echo $prixSemaine; ?> par semaine
+                <br>
+                <?php echo $prixMois; ?> par mois
+              <?php } ?>
+            </div>
+          </div>
+          <div>
+            <div>Superficie</div>
+            <div><?php echo $superficie; ?></div>
+          </div>
+          <div>
+            <div>Pour</div>
+            <div>2 personnes - lit double</div>
           </div>
         </div>
-        <div>
-          <div>Superficie</div>
-          <div><?php echo $superficie; ?></div>
+        <a class="btn overview-btn" href="/booking.html">Réserver en ligne</a>
+      </div>
+      <div class="overview-right" style="background-image: url(/assets/rooms/<?php echo $assets; ?>/cover.jpg)">
+        <div class="overview-equipments">
+          <?php foreach(array_chunk($equipments, count($equipments) / 2 + (count($equipments) % 2 === 0 ? 0 : 1)) as $list) { ?>
+            <ul>
+              <?php foreach($list as $el) { ?>
+                <li><?php echo $el; ?></li>
+              <?php } ?>
+            </ul>
+          <?php } ?>
         </div>
-        <div>
-          <div>Nbr. Places</div>
-          <div>2 personnes - lit double</div>
-        </div>
-      </div>
-      <div class="btns">
-        <a class="btn btn-reservation" href="/booking.html">Réservation</a>
-        <!--<a class="btn btn-calendar">Disponibilités</a>-->
-        <a class="btn btn-rules" href="/reglement.html">Conditions</a>
-      </div>
-    </div>
-    <div class="section-desc-right">
-      <img src="/assets/rooms/<?php echo $assets; ?>/cover.jpg" class="cover">
-      <div class="equipments">
-        <?php foreach(array_chunk($equipments, count($equipments) / 2 + (count($equipments) % 2 === 0 ? 0 : 1)) as $list) { ?>
-          <ul>
-            <?php foreach($list as $el) { ?>
-              <li><?php echo $el; ?></li>
-            <?php } ?>
-          </ul>
-        <?php } ?>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-gallery">
-  <h2 class="section-title">Gallerie photos</h2>
-
-  <div class="gallery">
-    <?php foreach($imgs as $img) { ?>
-      <div class="img">
-        <img
-          src="/assets/rooms-thumbnails/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
-          data-src="/assets/rooms/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
-        >
-      </div>
-    <?php } ?>
-  </div>
-
-  <div class="modal modal-gallery">
-    <div class="img"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="close"></div>
-  </div>
-</section>
-
-<section class="section section-contact">
-
-  <div class="row mobile-col">
-
-    <div class="row-col">
-      <h2 class="section-title">Contact</h2>
-
-      <p class="section-p" style="margin-right: 160px; text-align: justify;">
-        Pour toute demande ou question.
-      </p>
-
-      <!--
-      <div class="section-p btns">
-        <a class="btn btn-reservation" href="/booking.html">Réservation</a>
-        <a class="btn btn-calendar">Disponibilités</a>
-        <a class="btn btn-rules" href="/reglement.html">Conditions</a>
-      </div>
-      -->
-
+<section class="gallery">
+  <?php foreach($imgs as $img) { ?>
+    <div class="img">
+      <img
+        src="/assets/rooms-thumbnails/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
+        data-src="/assets/rooms/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
+      >
     </div>
-
-    <form name="reservation" class="row-col">
-      <label class="field">
-        Email
-        <input name="email" type="email">
-      </label>
-      <label class="field">
-        Nom et Prénom
-        <input name="name">
-      </label>
-
-      <label class="field">
-        Message
-        <textarea name="msg" rows="8" placeholder="Indiquer votre date d'arrivée et de départ"></textarea>
-      </label>
-
-      <input type="hidden" name="room" value="<?php echo $name; ?>">
-
-      <button type="submit">Envoyer votre demande</button>
-      <span class="after-button">ou par mail <a class="eliam"></a></span>
-    </form>
-
-  </div>
-
+  <?php } ?>
 </section>
 
-<div class="modal modal-calendar">
+<div class="modal" data-modal="gallery">
+  <div class="img"></div>
+  <div class="left"></div>
+  <div class="right"></div>
   <div class="close"></div>
 </div>

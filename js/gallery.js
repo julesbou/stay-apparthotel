@@ -3,7 +3,7 @@ $(function() {
   if (!$('.gallery').length) return
 
   const $gallery = $('.gallery')
-  const $galleryModal = $('.modal-gallery')
+  const $galleryModal = $('[data-modal=gallery]')
   const $imgs = $('.gallery .img')
 
   $gallery.find('img').unveil()

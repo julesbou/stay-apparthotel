@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Dosis:200,300,400,500,600,700,800|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/assets/favicon.ico">
     <title>Stay AppartHotel Lille</title>
@@ -24,6 +23,22 @@
     <script src="/jquery.min.js"></script>
     <script> window.eliam = ['com', 'apparthotel@gmail', 'stay'].reverse().join('.') </script>
     <script src="/scripts.js"></script>
+
+    <header class="header">
+      <a href="/" class="header-logo">
+        <div>Stay Appart</div>
+        <div>Hotel Lille</div>
+      </a>
+      <p class="header-text">Locations courtes et moyennes durée EN PLEIN COEUR DE Lille.</p>
+    </header>
+
     <?php echo $content; ?>
+
+    <footer class="footer">
+      <p>Adresse: <b>Stay AppartHotel - 4 Rue des 2 Épées - 59800 Lille</b></p>
+      <p>Contact: <b><a class="eliam"></a></b></p>
+      <p>Réalisation: <b><a href="http://julesbou.net">Jules</a></b></p>
+    </footer>
+
   </body>
 </html>
