@@ -24,15 +24,17 @@
     <script> window.eliam = ['com', 'apparthotel@gmail', 'stay'].reverse().join('.') </script>
     <script src="/scripts.js"></script>
 
-    <header class="header">
-      <a href="/" class="header-logo">
-        <div>Stay Appart</div>
-        <div>Hotel Lille</div>
-      </a>
-      <p class="header-text">Locations courtes et moyennes durée EN PLEIN COEUR DE Lille.</p>
-    </header>
+    <div class="wrap">
+      <header class="header">
+        <a href="/" class="header-logo">
+          <div>Stay Appart</div>
+          <div>Hotel Lille</div>
+        </a>
+        <p class="header-text">Locations courtes et moyennes durée EN PLEIN COEUR DE Lille.</p>
+      </header>
 
-    <?php echo $content; ?>
+      <?php echo $content; ?>
+    </div>
 
     <footer class="footer">
       <p>Adresse: <b>Stay AppartHotel - 4 Rue des 2 Épées - 59800 Lille</b></p>

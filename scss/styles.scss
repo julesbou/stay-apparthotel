@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  min-height: calc(100% - 40px);
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,8 +21,17 @@ body {
   font-family: NobelBook;
   font-size: 16px;
 
+  // sticky footer
+  display: flex;
+  flex-direction: column;
+
   &.has-overlay {
     overflow: hidden;
+  }
+
+  // sticky footer
+  .wrap {
+    flex: 1 0 auto;
   }
 }
 
