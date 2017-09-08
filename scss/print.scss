@@ -1,13 +1,7 @@
 @media print {
   font-size: 50%;
 
-  .back, .print,
-  .section-contact {
+  .contact {
     display: none !important;
   }
-
-  .title {
-    font-size: 40px;
-  }
-
 }

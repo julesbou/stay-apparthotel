@@ -7,6 +7,14 @@ $mobile-width: 980px;
   }
 }
 
+@mixin font-size($size) {
+  font-size: $size * 1px;
+
+  @include mobile {
+    font-size: round($size * 1.4px);
+  }
+}
+
 html {
   margin: 0;
   height: 100%;
@@ -19,7 +27,7 @@ body {
   padding: 0;
   color: #222;
   font-family: NobelBook;
-  font-size: 16px;
+  @include font-size(16);
 
   // sticky footer
   display: flex;
