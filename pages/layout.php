@@ -31,6 +31,10 @@
           <div>Hotel Lille</div>
         </a>
         <p class="header-text">Locations courtes et moyennes durée EN PLEIN COEUR DE Lille.</p>
+        <p class="header-intro">
+          Dans un immeuble entièrement rénové, vous serez séduits par ces studios très bien équipés, meublés et décorés avec goût.
+          Situés au 3ème étage avec ascenceur.
+        </p>
       </header>
 
       <?php echo $content; ?>
@@ -40,6 +44,11 @@
       <p>Adresse: <b>Stay AppartHotel - 4 Rue des 2 Épées - 59800 Lille</b></p>
       <p>Contact: <b><a class="eliam"></a></b></p>
       <p>Réalisation: <b><a href="http://julesbou.net">Jules</a></b></p>
+
+      <a href="" class="facebook">
+        Rejoignez nous sur Facebook
+        <img src="/assets/icons/fb.svg" />
+      </a>
     </footer>
 
   </body>

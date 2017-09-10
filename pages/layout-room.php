@@ -17,7 +17,7 @@
         <p><?php echo $desc; ?></p>
         <div class="overview-details">
           <div>
-            <div>Prix</div>
+            <div>Prix <br><small>(À partir de)</small></div>
             <div>
               <?php if ($url === '/chambre.html') { ?>
                 <?php echo $prix; ?> par nuit

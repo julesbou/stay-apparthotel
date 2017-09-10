@@ -65,6 +65,7 @@
       align-items: center;
       flex-basis: 100px;
       justify-content: center;
+      text-align: center;
 
       @include mobile {
         flex-basis: 200px;

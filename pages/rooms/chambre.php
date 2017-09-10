@@ -3,9 +3,9 @@
   $data = array(
     'name' => 'Chambre',
     'url' => '/chambre.html',
-    'prix' => '59€',
+    'prix' => '69€',
     'desc' => "
-Situé au 3ème étage avec ascenseur, la chambre est entièrement équipée et vient d'être rénovée.
+Pied à terre idéal pour un week-end ou un court séjour, entiérement neuf et équipé.
 Salle de bain avec douche, wc suspendu et meuble vasque. Dressing aménagé, coin bureau, TV.
 ",
     'superficie' => '17m²',

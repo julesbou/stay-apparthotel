@@ -7,12 +7,12 @@
     'prixSemaine' => '490€',
     'prixMois' => '1490€',
     'desc' => "
-Situé au 3ème étage avec ascenseur, l'appartement est entièrement neuf et équipé.
+Appartement très confortable, entièrement neuf et équipé.
 Cuisine équipée complète, salle de bain avec douche, wc suspendu et meuble vasque.
 Salon avec TV, chambre séparée par verrière, dressing aménagé.
 Tout est inclus, chauffage, accès internet, linge de lit et serviettes.
 ",
-    'superficie' => '37m²',
+    'superficie' => '33m²',
     'assets' => 'appartement-1',
     'imgs' => array(1, 2, 3, 4, 5, 6),
     'equipments' => array(
