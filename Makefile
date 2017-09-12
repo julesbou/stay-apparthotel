@@ -38,6 +38,3 @@ thumbnails:
 
 assets:
 	cp -r assets build/
-
-heroku:
-	git subtree push --prefix mailer heroku master

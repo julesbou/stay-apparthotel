@@ -4,7 +4,7 @@
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr" />
   <meta property="og:title" content="Stay AppartHotel" />
-  <meta property="og:description" content="Locations courtes et moyennes durée EN PLEIN COEUR DE Lille." />
+  <meta property="og:description" content="Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille." />
   <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/appartement-1/cover.jpg" />
 ';
 ?>
@@ -38,7 +38,7 @@
     <a href="/chambre.html" class="tile-picture" style="background-image: url(/assets/rooms/chambre/cover.jpg)"></a>
     <div class="tile-content">
       <h3>Chambre</h3>
-      <p>Pour les séjours courts, soyez à l'aise - Chambre équipé d'une salle de bain et de toilettes.</p>
+      <p>Pied à terre idéal pour un week end ou court séjour - Chambre équipé d'une salle de bain et de toilettes.</p>
       <a href="/chambre.html">Visiter la chambre</a>
     </div>
   </article>
@@ -61,31 +61,28 @@
     <p>À votre écoute - Pour toute questions ou demande.</p>
 
     <div class="contact-box">
-      <form name="contact" class="contact-form">
+      <form class="contact-form" method="POST">
         <label class="field">
           Email
-          <input name="email" type="email" required>
+          <input type="email" name="_replyto" required>
         </label>
         <label class="field">
           Nom et Prénom
-          <input name="name">
+          <input type="text" name="name">
         </label>
         <label class="field">
           Message
           <textarea name="msg" rows="8" required></textarea>
         </label>
-        <button type="submit">Envoyer</button>
+        <input type="submit" value="Envoyer" />
       </form>
 
       <div class="contact-reglement">
         <ul>
-          <li>✔ Appartements Non fumeur</li>
-          <li>✔ Ne convient pas aux animaux</li>
-          <li>✔ Pas de fête ni de soirée</li>
           <li>✔ Connection internet (WIFI & Ethernet)</li>
           <li>✔ Draps et serviettes de toilette fournis</li>
-          <li>✔ Places de parking (en supplément) au <a target="_blank" href="https://www.google.fr/maps/place/Parking+EFFIA+Nouveau+Si%C3%A8cle+T%C3%A9l%C3%A9p%C3%A9age/@50.6371404,3.0579306,17z/data=!3m1!4b1!4m5!3m4!1s0x47c2d587ad309ef7:0xd99fc139717f482f!8m2!3d50.637137!4d3.0601246">Nouveau Siècle</a></li>
-          <li>✔ Ménage (en supplément)</li>
+          <li>✔ Places de parking (en supplément) au <a target="_blank" href="https://www.google.fr/maps/place/Parking+EFFIA+Nouveau+Si%C3%A8cle+T%C3%A9l%C3%A9p%C3%A9age/@50.6371404,3.0579306,17z/data=!3m1!4b1!4m5!3m4!1s0x47c2d587ad309ef7:0xd99fc139717f482f!8m2!3d50.637137!4d3.0601246">Nouveau Siècle</a> (parking Effia)</li>
+          <li>✔ Ménage possible (en supplément)</li>
         </ul>
       </div>
     </div>

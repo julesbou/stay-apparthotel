@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/assets/favicon.ico">
-    <title>Stay AppartHotel Lille</title>
-    <meta name="description" content="Location d'appart-hotel sur Lille en plein centre ville.">
+    <title>Stay AppartHotel Lille - Location de meublés en courte et moyenne durée</title>
+    <meta name="description" content="Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille">
     <?php if (isset($view['head'])) echo $view['head']; ?>
     <script>
       if (window.location.hostname !== '127.0.0.1') {
@@ -30,7 +30,7 @@
           <div>Stay Appart</div>
           <div>Hotel Lille</div>
         </a>
-        <p class="header-text">Locations courtes et moyennes durée EN PLEIN COEUR DE Lille.</p>
+        <p class="header-text">Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille.</p>
         <p class="header-intro">
           Dans un immeuble entièrement rénové, vous serez séduits par ces studios très bien équipés, meublés et décorés avec goût.
           Situés au 3ème étage avec ascenceur.
@@ -45,7 +45,7 @@
       <p>Contact: <b><a class="eliam"></a></b></p>
       <p>Réalisation: <b><a href="http://julesbou.net">Jules</a></b></p>
 
-      <a href="" class="facebook">
+      <a href="https://www.facebook.com/Stay-Appart-H%C3%B4tel-Lille-1301926073195337/" class="facebook">
         Rejoignez nous sur Facebook
         <img src="/assets/icons/fb.svg" />
       </a>

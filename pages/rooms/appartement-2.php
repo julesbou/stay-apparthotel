@@ -7,10 +7,14 @@
     'prixSemaine' => '450€',
     'prixMois' => '1390€',
     'desc' => "
-Très bel appartement, entièrement neuf et équipé.
-Cuisine équipée complète, salle de bain avec douche, wc suspendu et meuble vasque.
-Salon avec TV, chambre séparée par verrière, coin bureau avec prise ethernet, dressing aménagé.
-Tout est inclus, chauffage, accès internet, linge de lit et serviettes.
+Appartement de 27m² pour une courte ou moyenne durée.
+Coin salon avec TV  écran plat accrochée au mur.
+Cuisine entièrement équipée avec bar et tabourets pour prendre ses repas.
+Coin nuit séparé de la pièce à vivre par une belle verrière avec lit double (140/190).
+Coin bureau pour travailler avec internet en wifi ou par port Ethernet.
+Grand dressing aménagé.
+Salle de bain avec douche, meuble vasque, wc suspendus et sèches serviette.
+Vous aurez à disposition un lave linge séchant, aspirateur, table et fer repasser (situé dans un local technique partagé avec l'appartement avec l'appartement Nº1)
 ",
     'superficie' => '27m²',
     'assets' => 'appartement-2',

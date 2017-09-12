@@ -3,7 +3,7 @@
 <?php $view['head'] = '
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr' . $url . '" />
-  <meta property="og:title" content="' . $name . ' - Locations courtes et moyennes durée EN PLEIN COEUR DE Lille." />
+  <meta property="og:title" content="' . $name . ' - Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille." />
   <meta property="og:description" content="' . $desc . '" />
   <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/' . $assets . '/cover.jpg" />
 ';

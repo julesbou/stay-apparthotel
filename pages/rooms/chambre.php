@@ -5,8 +5,9 @@
     'url' => '/chambre.html',
     'prix' => '69€',
     'desc' => "
-Pied à terre idéal pour un week-end ou un court séjour, entiérement neuf et équipé.
-Salle de bain avec douche, wc suspendu et meuble vasque. Dressing aménagé, coin bureau, TV.
+Chambre située sur l'arrière de l'immeuble au calme composée d'un lit (140/190), coin bureau et télé écran plat.
+Salle de bain avec douche, meuble vasque, wc suspendus et radiateur sèche serviette.
+Mini bar, machine Nespresso et bouilloire (pas de cuisine).
 ",
     'superficie' => '17m²',
     'assets' => 'chambre',
