@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/assets/favicon.ico">
-    <title>Stay AppartHotel Lille - Location de meublés en courte et moyenne durée</title>
-    <meta name="description" content="Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille">
+    <title>Stay Appart Hotel - Appartements meublés pour location courte ou moyenne durée</title>
+    <meta name="description" content="Dans un immeuble entièrement rénové, vous serez séduits par ces studios très bien équipés, meublés et décorés avec goût.">
     <?php if (isset($view['head'])) echo $view['head']; ?>
     <script>
       if (window.location.hostname !== '127.0.0.1') {

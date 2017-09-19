@@ -5,7 +5,7 @@
     'url' => '/chambre.html',
     'prix' => '69€',
     'desc' => "
-Chambre située sur l'arrière de l'immeuble au calme composée d'un lit (140/190), coin bureau et télé écran plat.
+Chambre située sur l'arrière de l'immeuble au calme composée d'un lit double (140/190), coin bureau et télé écran plat.
 Salle de bain avec douche, meuble vasque, wc suspendus et radiateur sèche serviette.
 Mini bar, machine Nespresso et bouilloire (pas de cuisine).
 ",

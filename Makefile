@@ -7,6 +7,7 @@ init:
 	mkdir build
 	cp node_modules/jquery/dist/jquery.min.js ./build
 	cp node_modules/babel-polyfill/dist/polyfill.min.js ./build
+	cp robots.txt ./build
 
 serve:
 	http-server ./build

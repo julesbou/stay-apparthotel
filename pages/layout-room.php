@@ -22,8 +22,10 @@
               <?php if ($url === '/chambre.html') { ?>
                 <?php echo $prix; ?> par nuit
               <?php } else { ?>
+                <?php if ($prix) { ?>
                 <?php echo $prix; ?> par nuit
                 <br>
+                <?php } ?>
                 <?php echo $prixSemaine; ?> par semaine
                 <br>
                 <?php echo $prixMois; ?> par mois

@@ -3,11 +3,11 @@
   $data = array(
     'name' => 'Appartement',
     'url' => '/appartement-2.html',
-    'prix' => '89€',
+    'prix' => '99€',
     'prixSemaine' => '450€',
     'prixMois' => '1390€',
     'desc' => "
-Appartement de 27m² pour une courte ou moyenne durée.
+Appartement de 27m² idéal pour une courte ou moyenne durée.
 Coin salon avec TV  écran plat accrochée au mur.
 Cuisine entièrement équipée avec bar et tabourets pour prendre ses repas.
 Coin nuit séparé de la pièce à vivre par une belle verrière avec lit double (140/190).
@@ -18,7 +18,7 @@ Vous aurez à disposition un lave linge séchant, aspirateur, table et fer repas
 ",
     'superficie' => '27m²',
     'assets' => 'appartement-2',
-    'imgs' => array(4, 2, 10, 3, 5, 8, 9, 1),
+    'imgs' => array(6, 2, 10, 3, 5, 8, 9, 1, 4, 7),
     'equipments' => array(
       'Cuisine Equipée',
       'Vaisselle',
