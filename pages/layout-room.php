@@ -13,7 +13,7 @@
   <div class="container">
     <div class="row mobile-col">
       <div class="overview-left">
-        <h2><?php echo $name; ?></h2>
+        <h3><?php echo $name; ?></h3>
         <p><?php echo $desc; ?></p>
         <div class="overview-details">
           <div>

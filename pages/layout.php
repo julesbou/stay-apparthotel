@@ -26,11 +26,13 @@
 
     <div class="wrap">
       <header class="header">
-        <a href="/" class="header-logo">
-          <div>Stay Appart</div>
-          <div>Hotel Lille</div>
-        </a>
-        <p class="header-text">Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille.</p>
+        <h1>
+          <a href="/" class="header-logo">
+            <div>Stay Appart</div>
+            <div>Hotel Lille</div>
+          </a>
+        </h1>
+        <h2 class="header-text">Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille.</h2>
         <p class="header-intro">
           Dans un immeuble entièrement rénové, vous serez séduits par ces studios très bien équipés, meublés et décorés avec goût.
           Situés au 3ème étage avec ascenceur.

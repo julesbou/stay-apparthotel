@@ -56,8 +56,8 @@
     <figure>
       <img src="/assets/street.jpg" />
       <figcaption>
-        Vue de la façade depuis rue Nationale<br>
-        L'entrée se fait dans la petit ruelle sur la droite.
+        Vue de la façade depuis la rue Nationale.<br>
+        L'entrée se fait par la petit passage sur la droite.
       </figcaption>
     </figure>
   </div>
