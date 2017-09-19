@@ -1,9 +1,10 @@
 <?php echo $view->extend('layout.php') ?>
 
 <?php $view['head'] = '
+  <title>Stay Appart Lille - Location meublés pour courte ou moyenne durée</title>
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr" />
-  <meta property="og:title" content="Stay AppartHotel" />
+  <meta property="og:title" content="Stay Appart Lille" />
   <meta property="og:description" content="Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille." />
   <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/appartement-1/cover.jpg" />
 ';
@@ -21,7 +22,7 @@
     <div class="tile-content">
       <h3>Appartement Nº1</h3>
       <p>Un appartement très confortable de 33 m2 idéal pour une moyenne ou longue durée.</p>
-      <a href="/appartement-1.html">Visiter l'appartement</a>
+      <a href="/appartement-1.html">voir l'appartement</a>
     </div>
   </article>
 
@@ -29,7 +30,7 @@
     <div class="tile-content">
       <h3>Appartement Nº2</h3>
       <p>Très bel appartement de 27 m2 idéal pour une courte ou moyenne durée.</p>
-      <a href="/appartement-2.html">Visiter l'appartement</a>
+      <a href="/appartement-2.html">voir l'appartement</a>
     </div>
     <a href="/appartement-2.html" class="tile-picture" style="background-image: url(/assets/rooms/appartement-2/cover.jpg)"><a>
   </article>
@@ -39,7 +40,7 @@
     <div class="tile-content">
       <h3>Chambre</h3>
       <p>Pied à terre idéal pour un week end ou court séjour. Chambre équipée d'une salle de bain et de toilettes.</p>
-      <a href="/chambre.html">Visiter la chambre</a>
+      <a href="/chambre.html">voir la chambre</a>
     </div>
   </article>
 </div>
@@ -54,7 +55,7 @@
       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCn4h7sfEvyNX_Fy6moKbwUTnp2CSwhSlQ&q=stay%20AppartHotel%20-%20%204%20Rue%20des%202%20%C3%89p%C3%A9es%2C%2059800%20Lille&zoom=15" allowfullscreen>
     </iframe>
     <figure>
-      <img src="/assets/street.jpg" />
+      <img src="/assets/street.jpg" alt="vue de la façade depuis la rue nationale" />
       <figcaption>
         Vue de la façade depuis la rue Nationale.<br>
         L'entrée se fait par la petit passage sur la droite.

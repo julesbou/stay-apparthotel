@@ -1,6 +1,7 @@
 <?php echo $view->extend('layout.php') ?>
 
 <?php $view['head'] = '
+  <title>' . $name . ' meublé pour location courte ou moyenne durée à Lille</title>
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr' . $url . '" />
   <meta property="og:title" content="' . $name . ' - Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille." />
@@ -59,10 +60,11 @@
 </section>
 
 <section class="gallery">
-  <?php foreach($imgs as $img) { ?>
+  <?php foreach($imgs as $index => $img) { ?>
     <div class="img">
       <img
         src="/assets/rooms-thumbnails/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
+        alt="Photo Nº<?php echo $index; ?> <?php echo $name; ?>"
         data-src="/assets/rooms/<?php echo $assets; ?>/<?php echo $img; ?>.jpg"
       >
     </div>

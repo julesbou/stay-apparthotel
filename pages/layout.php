@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/assets/favicon.ico">
-    <title>Stay Appart Hotel - Appartements meublés pour location courte ou moyenne durée</title>
     <meta name="description" content="Dans un immeuble entièrement rénové, vous serez séduits par ces studios très bien équipés, meublés et décorés avec goût.">
     <?php if (isset($view['head'])) echo $view['head']; ?>
     <script>
@@ -43,7 +42,7 @@
     </div>
 
     <footer class="footer">
-      <p>Adresse: <b>Stay AppartHotel - 4 Rue des 2 Épées - 59800 Lille</b></p>
+      <p>Adresse: <b>Stay Appart - 4 Rue des 2 Épées - 59800 Lille</b></p>
       <p>Contact: <b><a class="eliam"></a></b></p>
       <p>Réalisation: <b><a href="http://julesbou.net">Jules</a></b></p>
 
