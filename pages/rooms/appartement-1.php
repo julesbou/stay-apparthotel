@@ -17,7 +17,7 @@ Vous aurez à disposition un lave linge séchant, aspirateur, table et fer à re
 ",
     'superficie' => '33m²',
     'assets' => 'appartement-1',
-    'imgs' => array(1, /*2,*/ /*3,*/ 4, 5, 6),
+    'imgs' => array(1, 2, 6, 4, 5, 3),
     'equipments' => array(
       'Cuisine Equipée',
       'Vaisselle',

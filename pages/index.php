@@ -1,10 +1,10 @@
 <?php echo $view->extend('layout.php') ?>
 
 <?php $view['head'] = '
-  <title>Stay Appart Lille - Location meublés pour courte ou moyenne durée</title>
+  <title>Stay Appart Hotel Lille - Location d\'appartements meublés en plein centre de Lille</title>
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr" />
-  <meta property="og:title" content="Stay Appart Lille" />
+  <meta property="og:title" content="Stay Appart Hotel Lille - Location d\'appartements meublés en plein centre de Lille" />
   <meta property="og:description" content="Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille." />
   <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/appartement-1/cover.jpg" />
 ';
@@ -58,7 +58,7 @@
       <img src="/assets/street.jpg" alt="vue de la façade depuis la rue nationale" />
       <figcaption>
         Vue de la façade depuis la rue Nationale.<br>
-        L'entrée se fait par la petit passage sur la droite.
+        L'entrée se fait par la rue piétonne sur la droite.
       </figcaption>
     </figure>
   </div>
@@ -66,7 +66,11 @@
 
 <section class="contact" id="contact">
   <div class="container">
-    <p>À votre écoute - Pour toute questions ou demande.</p>
+    <p>
+      À votre écoute - Pour toute questions ou demande.
+      <br>
+      <small>(disponibilités visibles sur <a href="/booking.html" target="_blank">la page de réservation</a>)</smalL>
+    </p>
 
     <div class="contact-box">
       <form class="contact-form" method="POST">
