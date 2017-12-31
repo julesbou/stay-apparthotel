@@ -23,7 +23,7 @@
               <?php if ($url === '/chambre.html') { ?>
                 <?php echo $prix; ?> par nuit
               <?php } else { ?>
-                <?php if ($prix) { ?>
+                <?php if (isset($prix)) { ?>
                 <?php echo $prix; ?> par nuit
                 <br>
                 <?php } ?>
@@ -42,7 +42,7 @@
             <div>2 personnes - lit double</div>
           </div>
         </div>
-        <a class="btn overview-btn" href="/booking.html">Réserver en ligne</a>
+        <a class="btn overview-btn" href="mailto:stay.apparthotel@gmail.com">Nous contacter</a>
       </div>
       <div class="overview-right" style="background-image: url(/assets/rooms/<?php echo $assets; ?>/cover.jpg)">
         <div class="overview-equipments">
