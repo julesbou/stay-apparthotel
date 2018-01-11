@@ -20,7 +20,7 @@
   <body>
     <script src="/polyfill.min.js"></script>
     <script src="/jquery.min.js"></script>
-    <script> window.eliam = ['com', 'apparthotel@gmail', 'stay'].reverse().join('.') </script>
+    <script> window.eliam = ['com', 'apparthotel+site@gmail', 'stay'].reverse().join('.') </script>
     <script src="/scripts.js"></script>
 
     <div class="wrap">

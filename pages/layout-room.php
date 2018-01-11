@@ -42,7 +42,7 @@
             <div>2 personnes - lit double</div>
           </div>
         </div>
-        <a class="btn overview-btn" href="mailto:stay.apparthotel@gmail.com">Nous contacter</a>
+        <a class="btn overview-btn" href="mailto:stay.apparthotel+site@gmail.com">Nous contacter</a>
       </div>
       <div class="overview-right" style="background-image: url(/assets/rooms/<?php echo $assets; ?>/cover.jpg)">
         <div class="overview-equipments">
