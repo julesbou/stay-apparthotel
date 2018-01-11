@@ -68,8 +68,6 @@
   <div class="container">
     <p>
       À votre écoute - Pour toute questions ou demande.
-      <br>
-      <small>(disponibilités visibles sur <a href="/booking.html" target="_blank">la page de réservation</a>)</smalL>
     </p>
 
     <div class="contact-box">
