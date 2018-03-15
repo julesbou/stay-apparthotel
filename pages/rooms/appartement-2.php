@@ -1,5 +1,5 @@
 <?php
-  echo $view->extend('layout-room.php');
+  echo $view->extend('room.php');
   $data = array(
     'name' => 'Appartement',
     'url' => '/appartement-2.html',
