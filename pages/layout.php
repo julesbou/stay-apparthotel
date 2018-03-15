@@ -43,9 +43,9 @@
     <footer class="footer">
       <p>Adresse: <b>Stay Appart Hotel - 4 Rue des 2 Épées - 59800 Lille</b></p>
       <p>Contact: <b><a class="eliam"></a></b></p>
-      <p>Réalisation: <b><a href="http://julesbou.fr">JulesBou.fr</a></b></p>
+      <p>Réalisation: <b><a href="http://julesbou.fr" target="_blank">JulesBou.fr</a></b></p>
 
-      <a href="https://www.facebook.com/Stay-Appart-H%C3%B4tel-Lille-1301926073195337/" class="facebook">
+      <a href="https://www.facebook.com/Stay-Appart-H%C3%B4tel-Lille-1301926073195337/" target="_blank" class="facebook">
         Rejoignez nous sur Facebook
         <img src="/assets/icons/fb.svg" />
       </a>

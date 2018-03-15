@@ -10,7 +10,7 @@ init:
 	cp robots.txt ./build
 
 serve:
-	http-server ./build
+	http-server ./build -p 8084
 
 deploy:
 	surge -p ./build --domain stay-apparthotel.fr

@@ -11,7 +11,7 @@ Mini bar, machine Nespresso et bouilloire (pas de cuisine).
 ",
     'superficie' => '17m²',
     'assets' => 'chambre',
-    'imgs' => array(1, 2, 5, 4, 10, 6, 7, 8, 3, 9),
+    'imgs' => array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 12, 14, 15, 18),
     'equipments' => array(
       'Minibar',
       'Cafetière Nespresso',
