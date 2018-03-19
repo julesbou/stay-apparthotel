@@ -4,6 +4,7 @@
   <title>Stay Appart Hotel Lille - Location d\'appartements meublés en plein centre de Lille</title>
   <meta property="fb:app_id" content="289746158116404" />
   <meta property="og:url" content="https://stay-apparthotel.fr" />
+  <meta property="og:type" content="place" />
   <meta property="og:title" content="Stay Appart Hotel Lille - Location d\'appartements meublés en plein centre de Lille" />
   <meta property="og:description" content="Location de meublés en courte et moyenne durée EN PLEIN COEUR DE Lille." />
   <meta property="og:image" content="https://stay-apparthotel.fr/assets/rooms/appartement-1/cover.jpg" />
