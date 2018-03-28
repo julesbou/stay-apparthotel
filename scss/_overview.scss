@@ -87,6 +87,7 @@
 
 .overview-btns {
   display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
@@ -101,6 +102,7 @@
     background-position: 14px 9px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    max-width: 400px;
 
     @include mobile {
       padding-left: 80px;

@@ -45,7 +45,9 @@
         </div>
         <div class="overview-btns">
           <a class="btn booking-btn" href="mailto:stay.apparthotel+site@gmail.com">Nous contacter</a>
-          <a class="btn calendar-btn" href="https://via.eviivo.com/calme59800" target="_blank">Réserver en ligne</a>
+          <?php if ($url === '/chambre.html') { ?>
+            <a class="btn calendar-btn" href="https://via.eviivo.com/calme59800" target="_blank">Réserver en ligne</a>
+          <?php } ?>
         </div>
       </div>
       <div class="overview-right" style="background-image: url(/assets/rooms/<?php echo $assets; ?>/cover.jpg)">
