@@ -87,7 +87,7 @@
 
 .overview-btns {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
