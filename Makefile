@@ -13,6 +13,7 @@ serve:
 	http-server ./build -p 8084
 
 deploy:
+	make
 	surge -p ./build --domain stay-apparthotel.fr
 	#surge -p ./build --domain stay-apparthotel.surge.sh
 
