@@ -49,6 +49,9 @@
 <section class="map" id="map">
   <div class="container">
     <p>Nous sommes situés en plein coeur de lille - 2min à pied de la grand place - 15min à pied des gares</p>
+    <div class="overview-btns" style="justify-content: center; margin-top: 20px">
+      <a class="btn calendar-btn" href="https://via.eviivo.com/calme59800" target="_blank">Réserver en ligne</a>
+    </div>
     <iframe
       width="100%"
       height="450"
