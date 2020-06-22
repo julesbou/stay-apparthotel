@@ -18,6 +18,7 @@
         <h3><?php echo $name; ?></h3>
         <p><?php echo $desc; ?></p>
         <div class="overview-details">
+          <!--
           <div>
             <div>Prix <br><small>(À partir de)</small></div>
             <div>
@@ -34,6 +35,7 @@
               <?php } ?>
             </div>
           </div>
+          -->
           <div>
             <div>Superficie</div>
             <div><?php echo $superficie; ?></div>
