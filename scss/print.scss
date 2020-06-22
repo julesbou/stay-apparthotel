@@ -1,5 +1,7 @@
 @media print {
-  font-size: 50%;
+  * {
+    font-size: 50%;
+  }
 
   .contact {
     display: none !important;

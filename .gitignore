@@ -1,4 +1,5 @@
 build/
+node_modules/
 .sass-cache/
 assets/rooms-thumbnails/
 mailer/vendor/

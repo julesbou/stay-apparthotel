@@ -2,6 +2,14 @@
 
 all: init js css assets thumbnails build
 
+install:
+	npm install
+	brew install imagemagick
+	npm install --global sass
+	npm install --global babel-cli
+	npm install --global chokidar-cli
+	npm install --global autoprefixer-cli
+
 init:
 	-rm -r build
 	mkdir build
@@ -27,8 +35,8 @@ js:
 	babel js/*.js  --presets=es2015 > build/scripts.js
 
 css:
-	scss scss/styles.scss build/styles.css --style compressed
-	autoprefixer-cli -o build/styles.css build/styles.css
+	sass scss/styles.scss build/styles.css --style compressed
+	autoprefixer-cli -o build/styles.css --no-map build/styles.css
 
 build:
 	php compile/build.php
